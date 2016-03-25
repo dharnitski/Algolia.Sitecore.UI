@@ -1,0 +1,22 @@
+﻿---
+ID: "e48023b3-9854-42ca-8e62-8b8fdd355d68"
+Parent: "d0fcec50-d82f-498d-8637-96011420b217"
+Template: "d0fcec50-d82f-498d-8637-96011420b217"
+Path: /sitecore/templates/Algolia/Datasources/Search Script/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Fields:
+  - ID: "fa653f9e-baf5-4bec-8f8c-e92c7e0575b1"
+    Hint: Url Sync
+    Type: Checkbox
+    Value: 1
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160323T235544
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: sitecore\admin
