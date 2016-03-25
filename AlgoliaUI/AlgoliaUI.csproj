@@ -102,6 +102,7 @@
     <Content Include="App_Config\Include\Unicorn\Unicorn.Configs.Default.config" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.config" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.AutoPublish.config" />
+    <Content Include="Areas\Algolia\Views\Web.config" />
     <None Include="Properties\PublishProfiles\sandbox.pubxml" />
   </ItemGroup>
   <ItemGroup>
