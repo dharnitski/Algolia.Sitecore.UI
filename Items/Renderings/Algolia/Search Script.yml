@@ -14,6 +14,9 @@ SharedFields:
 - ID: "b5b27af1-25ef-405c-87ce-369b3a004016"
   Hint: Datasource Location
   Value: ./Content/Algolia/
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: "<image mediaid=\"{738C054C-B4C1-407E-BBCB-82527CB0DEA5}\" />"
 Languages:
 - Language: en
   Versions:

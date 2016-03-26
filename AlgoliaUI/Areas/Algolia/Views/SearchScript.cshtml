@@ -1,6 +1,22 @@
-﻿@model Sitecore.Mvc.Presentation.RenderingModel
+﻿@model RenderingModel
 
-<div>
-    hghg
-</div>
+
+@if (Sitecore.Context.PageMode.IsPageEditorEditing)
+{
+    <script src="//cdn.jsdelivr.net/instantsearch.js/1/instantsearch.min.js"></script>
+    <script>
+    var search = instantsearch({
+        appId: '$appId',
+        apiKey: '$apiKey',
+        indexName: '$indexName',
+        urlSync: true
+    });
+    </script>
+}
+else
+{
+  
+}
+
+
 
