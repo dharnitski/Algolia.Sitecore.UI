@@ -1,0 +1,30 @@
+﻿@model RenderingModel
+
+
+@if (!Sitecore.Context.PageMode.IsPageEditorEditing)
+{
+    <div id="@Model.Rendering.UniqueId" class="text-muted"></div>
+    <script>
+        search.addWidget(
+            instantsearch.widgets.stats({
+                container: '#@Model.Rendering.UniqueId'
+            })
+        );
+    </script>
+}
+else
+{
+    <div class="ais-root ais-stats">
+        <div class="ais-body ais-stats--body">
+            <div>
+                10,000 results
+                <span class="ais-stats--time">
+                    found in 1ms
+                </span>
+            </div>
+        </div>
+    </div>
+}
+
+
+
