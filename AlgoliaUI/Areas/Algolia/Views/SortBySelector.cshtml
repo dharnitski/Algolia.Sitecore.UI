@@ -1,0 +1,35 @@
+﻿@model RenderingModel
+
+@if (!Sitecore.Context.PageMode.IsPageEditorEditing)
+{
+    <div id="sort-by-container-@Model.Rendering.UniqueId" class="text-muted"></div>
+    <script>
+        search.addWidget(
+            instantsearch.widgets.sortBySelector({
+                container: '#sort-by-container-@Model.Rendering.UniqueId',
+                indices: [
+                    { name: 'ikea', label: 'Featured' },
+                    { name: 'ikea_price_asc', label: 'Price asc.' },
+                    { name: 'ikea_price_desc', label: 'Price desc.' }
+                ]
+            })
+        );
+    </script>
+}
+else
+{
+    <select class="ais-sort-by-selector">
+        <option selected="" class="ais-sort-by-selector--item" value="instant_search">
+            Most relevant
+        </option>
+        <option class="ais-sort-by-selector--item" value="instant_search_price_asc">
+            Lowest price
+        </option>
+        <option class="ais-sort-by-selector--item" value="instant_search_price_desc">
+            Highest price
+        </option>
+    </select>
+}
+
+
+

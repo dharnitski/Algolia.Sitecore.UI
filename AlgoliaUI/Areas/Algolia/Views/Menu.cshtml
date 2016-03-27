@@ -1,0 +1,133 @@
+﻿@model RenderingModel
+
+@if (!Sitecore.Context.PageMode.IsPageEditorEditing)
+{
+    <div id="categories-@Model.Rendering.UniqueId" class="text-muted"></div>
+    <script>
+        search.addWidget(
+            instantsearch.widgets.menu({
+                container: '#categories-@Model.Rendering.UniqueId',
+                attributeName: 'categories',
+                limit: 10,
+                templates: {
+                    header: 'Categories'
+                }
+            })
+        );
+    </script>
+}
+else
+{
+    <div class="ais-root ais-menu">
+        <div class="ais-menu--header ais-header">
+            Categories
+        </div>
+        <div class="ais-body ais-menu--body">
+            <div class="ais-menu--list">
+                <div class="ais-menu--item">
+                    <div>
+                        <a class="ais-menu--link" href="#">
+                            Cell Phones
+                            <span class="ais-menu--count">
+                                1,920
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="ais-menu--item">
+                    <div>
+                        <a class="ais-menu--link" href="#">
+                            Computers &amp; Tablets
+                            <span class="ais-menu--count">
+                                1,858
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="ais-menu--item">
+                    <div>
+                        <a class="ais-menu--link" href="#">
+                            Cell Phone Accessories
+                            <span class="ais-menu--count">
+                                1,643
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="ais-menu--item">
+                    <div>
+                        <a class="ais-menu--link" href="#">
+                            Appliances
+                            <span class="ais-menu--count">
+                                1,533
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="ais-menu--item">
+                    <div>
+                        <a class="ais-menu--link" href="#">
+                            Audio
+                            <span class="ais-menu--count">
+                                1,010
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="ais-menu--item">
+                    <div>
+                        <a class="ais-menu--link" href="#">
+                            iPhone Accessories
+                            <span class="ais-menu--count">
+                                805
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="ais-menu--item">
+                    <div>
+                        <a class="ais-menu--link" href="#">
+                            Cameras &amp; Camcorders
+                            <span class="ais-menu--count">
+                                753
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="ais-menu--item">
+                    <div>
+                        <a class="ais-menu--link" href="#">
+                            iPhone Cases &amp; Clips
+                            <span class="ais-menu--count">
+                                680
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="ais-menu--item">
+                    <div>
+                        <a class="ais-menu--link" href="#">
+                            TV &amp; Home Theater
+                            <span class="ais-menu--count">
+                                617
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="ais-menu--item">
+                    <div>
+                        <a class="ais-menu--link" href="#">
+                            Small Kitchen Appliances
+                            <span class="ais-menu--count">
+                                525
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+
+

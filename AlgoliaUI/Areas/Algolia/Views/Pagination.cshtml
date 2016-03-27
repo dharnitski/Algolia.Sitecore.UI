@@ -1,0 +1,79 @@
+﻿@model RenderingModel
+
+@if (!Sitecore.Context.PageMode.IsPageEditorEditing)
+{
+    <div id="pagination-container-@Model.Rendering.UniqueId" class="text-muted"></div>
+    <script>
+        search.addWidget(
+            instantsearch.widgets.pagination({
+                container: '#pagination-container-@Model.Rendering.UniqueId',
+                maxPages: 20,
+                // default is to scroll to 'body', here we disable this behavior
+                scrollTo: false
+            })
+        );
+    </script>
+}
+else
+{
+    <ul class="ais-pagination">
+        <li class="ais-pagination--item ais-pagination--item__first ais-pagination--item__disabled">
+            <a class="ais-pagination--link" href="#">
+                «
+            </a>
+        </li>
+        <li class="ais-pagination--item ais-pagination--item__previous ais-pagination--item__disabled">
+            <a class="ais-pagination--link" href="#">
+                ‹
+            </a>
+        </li>
+        <li class="ais-pagination--item ais-pagination--item__page ais-pagination--item__active">
+            <a class="ais-pagination--link" href="#">
+                1
+            </a>
+        </li>
+        <li class="ais-pagination--item ais-pagination--item__page">
+            <a class="ais-pagination--link" href="#">
+                2
+            </a>
+        </li>
+        <li class="ais-pagination--item ais-pagination--item__page">
+            <a class="ais-pagination--link" href="#">
+                3
+            </a>
+        </li>
+        <li class="ais-pagination--item ais-pagination--item__page">
+            <a class="ais-pagination--link" href="#">
+                4
+            </a>
+        </li>
+        <li class="ais-pagination--item ais-pagination--item__page">
+            <a class="ais-pagination--link" href="#">
+                5
+            </a>
+        </li>
+        <li class="ais-pagination--item ais-pagination--item__page">
+            <a class="ais-pagination--link" href="#">
+                6
+            </a>
+        </li>
+        <li class="ais-pagination--item ais-pagination--item__page">
+            <a class="ais-pagination--link" href="#">
+                7
+            </a>
+        </li>
+        <li class="ais-pagination--item ais-pagination--item__next">
+            <a class="ais-pagination--link" href="#">
+                ›
+            </a>
+        </li>
+        <li class="ais-pagination--item ais-pagination--item__last">
+            <a class="ais-pagination--link" href="#">
+                »
+            </a>
+        </li>
+    </ul>
+}
+
+
+

@@ -1,0 +1,35 @@
+﻿@model RenderingModel
+
+@if (!Sitecore.Context.PageMode.IsPageEditorEditing)
+{
+    <div id="q-@Model.Rendering.UniqueId" class="text-muted"></div>
+    <script>
+        search.addWidget(
+            instantsearch.widgets.searchBox({
+                container: '#q-@Model.Rendering.UniqueId',
+                placeholder: 'Search for products',
+                autofocus: false,
+                poweredBy: true
+            })
+        );
+    </script>
+}
+else
+{
+    <div class="ais-search-box">
+        <input autocapitalize="off" autocomplete="off" autocorrect="off" placeholder="Search for products" role="textbox" spellcheck="false" type="text" value="" class="ais-search-box--input">
+        <div>
+            <div class="ais-search-box--powered-by">
+                <span>
+                    Search by
+                </span>
+                <a class="ais-search-box--powered-by-link" href="https://www.algolia.com/?utm_source=instantsearch.js&amp;utm_medium=website&amp;utm_content=community.algolia.com&amp;utm_campaign=poweredby" target="_blank">
+                    Algolia
+                </a>
+            </div>
+        </div>
+    </div>
+}
+
+
+

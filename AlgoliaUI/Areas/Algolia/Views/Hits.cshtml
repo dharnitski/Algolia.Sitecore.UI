@@ -1,0 +1,55 @@
+﻿@model RenderingModel
+
+@if (!Sitecore.Context.PageMode.IsPageEditorEditing)
+{
+    <div id="hits-container-@Model.Rendering.UniqueId" class="text-muted"></div>
+    <script>
+        
+        var hitTemplate =
+  '<article class="hit">' +
+      '<div class="product-picture-wrapper">' +
+        '<div class="product-picture"><img src="{{image}}" /></div>' +
+      '</div>' +
+      '<div class="product-desc-wrapper">' +
+        '<div class="product-name">{{{_highlightResult.name.value}}}</div>' +
+        '<div class="product-type">{{{_highlightResult.type.value}}}</div>' +
+        '<div class="product-price">${{price}}</div>' +
+        '<div class="product-rating">{{#stars}}<span class="ais-star-rating--star{{^.}}__empty{{/.}}"></span>{{/stars}}</div>' +
+      '</div>' +
+  '</article>';
+
+        var noResultsTemplate =
+  '<div class="text-center">No results found matching <strong>{{query}}</strong>.</div>';
+
+        search.addWidget(
+            instantsearch.widgets.hits({
+                container: '#hits-container-@Model.Rendering.UniqueId',
+                templates: {
+                    empty: noResultsTemplate,
+                    item: hitTemplate
+                },
+                hitsPerPage: 6
+            })
+        );
+    </script>
+}
+else
+{
+    <div class="ais-hits">
+        <div class="ais-hits--item">
+            <strong>
+                Hit 1696302
+            </strong>
+            : 3-Year Unlimited Cloud Storage Service Activation Card - Other
+        </div>
+        <div class="ais-hits--item">
+            <strong>
+                Hit 9131042
+            </strong>
+            : 360fly - Panoramic 360° HD Video Camera - Black
+        </div>
+    </div>
+}
+
+
+

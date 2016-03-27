@@ -1,0 +1,35 @@
+﻿@model RenderingModel
+
+@if (!Sitecore.Context.PageMode.IsPageEditorEditing)
+{
+    <div id="hits-per-page-selector-@Model.Rendering.UniqueId" class="text-muted"></div>
+    <script>
+        search.addWidget(
+            instantsearch.widgets.hitsPerPageSelector({
+                container: '#hits-per-page-selector-@Model.Rendering.UniqueId',
+                options: [
+                    { value: 6, label: '6 per page' },
+                    { value: 12, label: '12 per page' },
+                    { value: 24, label: '24 per page' }
+                ]
+            })
+        );
+    </script>
+}
+else
+{
+    <select class="ais-hits-per-page-selector">
+        <option selected="" class="ais-hits-per-page-selector--item" value="6">
+            6 per page
+        </option>
+        <option class="ais-hits-per-page-selector--item" value="12">
+            12 per page
+        </option>
+        <option class="ais-hits-per-page-selector--item" value="24">
+            24 per page
+        </option>
+    </select>
+}
+
+
+

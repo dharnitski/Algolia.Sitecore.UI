@@ -3,11 +3,11 @@
 
 @if (!Sitecore.Context.PageMode.IsPageEditorEditing)
 {
-    <div id="@Model.Rendering.UniqueId" class="text-muted"></div>
+    <div id="stats-@Model.Rendering.UniqueId" class="text-muted"></div>
     <script>
         search.addWidget(
             instantsearch.widgets.stats({
-                container: '#@Model.Rendering.UniqueId'
+                container: '#stats-@Model.Rendering.UniqueId'
             })
         );
     </script>

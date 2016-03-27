@@ -1,0 +1,21 @@
+﻿---
+ID: "a625c796-5cce-43a6-87f1-c5d0de10f355"
+Parent: "a46da274-dc83-44f4-b0cd-5eb80aca8882"
+Template: "99f8905d-4a87-4eb8-9f8b-a9bebfb3add6"
+Path: /sitecore/layout/Renderings/Algolia/Search Box
+DB: master
+SharedFields:
+- ID: "51b435bc-f7b9-478a-9c51-52916af96ff5"
+  Hint: Path
+  Value: /areas/Algolia/views/SearchBox.cshtml
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: "<image mediaid=\"{7FB94C11-EDD1-4180-8678-C7F9A8DF08B0}\" />"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160326T225054

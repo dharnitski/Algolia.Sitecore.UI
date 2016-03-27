@@ -1,0 +1,21 @@
+﻿---
+ID: "c1dfef3f-172d-40ad-a970-cac57afb7bf6"
+Parent: "a46da274-dc83-44f4-b0cd-5eb80aca8882"
+Template: "99f8905d-4a87-4eb8-9f8b-a9bebfb3add6"
+Path: /sitecore/layout/Renderings/Algolia/Hits Per Page Selector
+DB: master
+SharedFields:
+- ID: "51b435bc-f7b9-478a-9c51-52916af96ff5"
+  Hint: Path
+  Value: /areas/Algolia/views/HitsPerPageSelector.cshtml
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: "<image mediaid=\"{86041F09-268D-482D-87A0-A2E060BECC26}\" />"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160326T224933

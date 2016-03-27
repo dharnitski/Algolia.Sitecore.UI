@@ -1,0 +1,21 @@
+﻿---
+ID: "fdb01acd-75a7-4722-9d8b-886bd9fec207"
+Parent: "a46da274-dc83-44f4-b0cd-5eb80aca8882"
+Template: "99f8905d-4a87-4eb8-9f8b-a9bebfb3add6"
+Path: /sitecore/layout/Renderings/Algolia/Refinement List
+DB: master
+SharedFields:
+- ID: "51b435bc-f7b9-478a-9c51-52916af96ff5"
+  Hint: Path
+  Value: /areas/Algolia/views/RefinementList.cshtml
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: "<image mediaid=\"{DCC3ACA6-0D3C-41AD-9277-D63000B106D0}\" />"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160325T225109
