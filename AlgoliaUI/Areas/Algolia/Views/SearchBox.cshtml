@@ -16,7 +16,7 @@
 else
 {
     <div class="ais-search-box">
-        <input autocapitalize="off" autocomplete="off" autocorrect="off" placeholder='@Html.Sitecore().Field("Placeholder")' role="textbox" spellcheck="false" type="text" value="" class="ais-search-box--input">
+        <input autocapitalize="off" autocomplete="off" autocorrect="off" placeholder='@Model.Item.Fields["Placeholder"].Value' role="textbox" spellcheck="false" type="text" value="" class="ais-search-box--input">
     </div>
     <div class="form-group">
         <label>Placeholder:</label>

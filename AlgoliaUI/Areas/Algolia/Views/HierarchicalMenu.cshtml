@@ -1,0 +1,41 @@
+﻿@model RenderingModel
+
+@if (!Sitecore.Context.PageMode.IsPageEditorEditing)
+{
+    <div id="hierarchical-categories-@Model.Rendering.UniqueId" class="text-muted"></div>
+    <script>
+        var menuTemplate =
+  '<a href="javascript:void(0);" class="facet-item {{#isRefined}}active{{/isRefined}}"><span class="facet-name"><i class="fa fa-angle-right"></i> {{name}}</span class="facet-name"></a>';
+
+
+        search.addWidget(
+            instantsearch.widgets.hierarchicalMenu({
+                container: '#hierarchical-categories-@Model.Rendering.UniqueId',
+                attributes: ['category', 'sub_category', 'sub_sub_category'],
+                sortBy: ['@Html.Sitecore().Field("Sort By")'],
+                templates: {
+                    item: @Model.Item.GetFieldDecodedRawValue("Item Template"),
+                    header: @Model.Item.GetFieldDecodedRawValue("Header Template")
+                }
+            })
+        );
+    </script>
+}
+else
+{
+    <div class="form-group">
+        <label>Header Template:</label>
+        @Html.Sitecore().Field("Header Template")
+    </div>
+    <div class="form-group">
+        <label>Item Template:</label>
+        @Html.Sitecore().Field("Item Template")
+    </div>
+    <div class="form-group">
+        <label>Sort By:</label>
+        @Html.Sitecore().Field("Sort By")
+    </div>
+}
+
+
+
