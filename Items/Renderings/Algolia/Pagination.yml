@@ -8,6 +8,9 @@ SharedFields:
 - ID: "51b435bc-f7b9-478a-9c51-52916af96ff5"
   Hint: Path
   Value: /areas/Algolia/views/Pagination.cshtml
+- ID: "b5b27af1-25ef-405c-87ce-369b3a004016"
+  Hint: Datasource Location
+  Value: ./Content/Algolia/
 - ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
   Hint: __Thumbnail
   Value: "<image mediaid=\"{022763D7-46C6-479D-A3BA-21060629F578}\" />"

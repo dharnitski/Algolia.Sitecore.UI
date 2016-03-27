@@ -1,0 +1,17 @@
+﻿---
+ID: "fa3f1a95-8b99-46f1-bec5-49f5ed4b6e0f"
+Parent: "d7138c70-f79e-4f4a-a7c6-b1872670be48"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Algolia/Datasources/Refinement List/Search
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160327T133122
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: sitecore\admin
