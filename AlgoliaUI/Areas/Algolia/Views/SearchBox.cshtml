@@ -2,7 +2,12 @@
 
 @if (!Sitecore.Context.PageMode.IsPageEditorEditing)
 {
-    <div id="q-@Model.Rendering.UniqueId" class="text-muted"></div>
+    <div class="input-group">
+        <input type="text" class="form-control" id="q-@Model.Rendering.UniqueId" />
+        <span class="input-group-btn">
+            <button class="btn btn-default"><i class="fa fa-search"></i></button>
+        </span>
+    </div>
     <script>
         search.addWidget(
             instantsearch.widgets.searchBox({

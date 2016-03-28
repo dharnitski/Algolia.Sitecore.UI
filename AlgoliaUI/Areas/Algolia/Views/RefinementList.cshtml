@@ -2,7 +2,7 @@
 
 @if (!Sitecore.Context.PageMode.IsPageEditorEditing)
 {
-    <div id="refinement-list-@Model.Rendering.UniqueId" class="text-muted"></div>
+    <div id="refinement-list-@Model.Rendering.UniqueId" class="facet"></div>
     <script>
         search.addWidget(
             instantsearch.widgets.refinementList({

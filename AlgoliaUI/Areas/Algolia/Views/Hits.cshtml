@@ -2,52 +2,33 @@
 
 @if (!Sitecore.Context.PageMode.IsPageEditorEditing)
 {
-    <div id="hits-container-@Model.Rendering.UniqueId" class="text-muted"></div>
+    <main id="hits-container-@Model.Rendering.UniqueId"></main>
     <script>
-        
-        var hitTemplate =
-  '<article class="hit">' +
-      '<div class="product-picture-wrapper">' +
-        '<div class="product-picture"><img src="{{image}}" /></div>' +
-      '</div>' +
-      '<div class="product-desc-wrapper">' +
-        '<div class="product-name">{{{_highlightResult.name.value}}}</div>' +
-        '<div class="product-type">{{{_highlightResult.type.value}}}</div>' +
-        '<div class="product-price">${{price}}</div>' +
-        '<div class="product-rating">{{#stars}}<span class="ais-star-rating--star{{^.}}__empty{{/.}}"></span>{{/stars}}</div>' +
-      '</div>' +
-  '</article>';
-
-        var noResultsTemplate =
-  '<div class="text-center">No results found matching <strong>{{query}}</strong>.</div>';
-
         search.addWidget(
             instantsearch.widgets.hits({
                 container: '#hits-container-@Model.Rendering.UniqueId',
                 templates: {
-                    empty: noResultsTemplate,
-                    item: hitTemplate
+                    empty: @Model.Item.GetFieldDecodedRawValue("Empty Template"),
+                    item: @Model.Item.GetFieldDecodedRawValue("Item Template")
                 },
-                hitsPerPage: 16
+                hitsPerPage: @Html.Sitecore().Field("Hits Per Page")
             })
         );
     </script>
 }
 else
 {
-    <div class="ais-hits">
-        <div class="ais-hits--item">
-            <strong>
-                Hit 1696302
-            </strong>
-            : 3-Year Unlimited Cloud Storage Service Activation Card - Other
-        </div>
-        <div class="ais-hits--item">
-            <strong>
-                Hit 9131042
-            </strong>
-            : 360fly - Panoramic 360° HD Video Camera - Black
-        </div>
+    <div class="form-group">
+        <label>Item Template:</label>
+        @Html.Sitecore().Field("Item Template")
+    </div>
+    <div class="form-group">
+        <label>Empty Template:</label>
+        @Html.Sitecore().Field("Empty Template")
+    </div>
+    <div class="form-group">
+        <label>Hits Per Page:</label>
+        @Html.Sitecore().Field("Hits Per Page")
     </div>
 }
 
