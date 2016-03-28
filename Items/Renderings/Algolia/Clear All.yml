@@ -1,0 +1,27 @@
+﻿---
+ID: "3800b1eb-7e16-4d64-a7a3-a4bd3361efef"
+Parent: "a46da274-dc83-44f4-b0cd-5eb80aca8882"
+Template: "86776923-eca5-4310-8dc0-ae65fe88d078"
+Path: /sitecore/layout/Renderings/Algolia/Clear All
+DB: master
+SharedFields:
+- ID: "09a60fea-d91a-4be3-87b3-654b7e22531b"
+  Hint: Placeholder
+  Value: /areas/Algolia/views/ClearAll.cshtml
+- ID: "1a7c85e5-dc0b-490d-9187-bb1dbcb4c72f"
+  Hint: Datasource Template
+  Value: /sitecore/templates/Algolia/Datasources/Clear All
+- ID: "b5b27af1-25ef-405c-87ce-369b3a004016"
+  Hint: Datasource Location
+  Value: ./Content/Algolia/
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: "<image mediaid=\"{0CD1EBB2-0219-4F0A-8B06-B03B3EF4E617}\" />"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160327T212325

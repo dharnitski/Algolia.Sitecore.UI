@@ -4,10 +4,6 @@
 {
     <div id="hierarchical-categories-@Model.Rendering.UniqueId" class="text-muted"></div>
     <script>
-        var menuTemplate =
-  '<a href="javascript:void(0);" class="facet-item {{#isRefined}}active{{/isRefined}}"><span class="facet-name"><i class="fa fa-angle-right"></i> {{name}}</span class="facet-name"></a>';
-
-
         search.addWidget(
             instantsearch.widgets.hierarchicalMenu({
                 container: '#hierarchical-categories-@Model.Rendering.UniqueId',

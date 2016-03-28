@@ -141,6 +141,7 @@
     <Content Include="Areas\Algolia\Views\Menu.cshtml" />
     <Content Include="Areas\Algolia\Views\SortBySelector.cshtml" />
     <Content Include="Areas\Algolia\Views\HierarchicalMenu.cshtml" />
+    <Content Include="Areas\Algolia\Views\ClearAll.cshtml" />
     <None Include="Properties\PublishProfiles\sandbox.pubxml" />
   </ItemGroup>
   <ItemGroup>
