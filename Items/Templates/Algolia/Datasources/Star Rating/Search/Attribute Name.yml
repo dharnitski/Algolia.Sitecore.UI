@@ -1,0 +1,21 @@
+﻿---
+ID: "714eca06-6b41-48e9-8ba3-282475a2c1e3"
+Parent: "8f1de4f9-3c30-461d-b4f8-81b2cf7fc2f1"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Algolia/Datasources/Star Rating/Search/Attribute Name
+DB: master
+SharedFields:
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: "Single-Line Text"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160328T230506

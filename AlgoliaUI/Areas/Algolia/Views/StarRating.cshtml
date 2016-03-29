@@ -1,0 +1,31 @@
+﻿@model RenderingModel
+
+@if (!Sitecore.Context.PageMode.IsPageEditorEditing)
+{
+    <div id="rating-@Model.Rendering.UniqueId" class="facet"></div>
+    <script>
+        search.addWidget(
+            instantsearch.widgets.starRating({
+                container: '#rating-@Model.Rendering.UniqueId',
+                attributeName: '@Html.Sitecore().Field("Attribute Name")',
+                templates: {
+                    header: @Model.Item.GetFieldDecodedRawValue("Header Template")
+                }
+            })
+        );
+    </script>
+}
+else
+{
+    <div class="form-group">
+        <label>Attribute Name:</label>
+        @Html.Sitecore().Field("Attribute Name")
+    </div>
+    <div class="form-group">
+        <label>Header Template:</label>
+        @Html.Sitecore().Field("Header Template")
+    </div>
+}
+
+
+
