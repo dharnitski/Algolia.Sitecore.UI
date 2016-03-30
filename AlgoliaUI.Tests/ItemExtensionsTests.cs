@@ -27,5 +27,21 @@ namespace AlgoliaUI.Tests
                 expected.ToHtmlString().Should().Be(@"'<div class=""facet - title"">Materials</div class=""facet - title"">'");
             }
         }
+
+        [Test]
+        public void ShouldParseIndeses()
+        {
+            using (var db = new Db
+            {
+                new DbItem("Home") {{"Title",
+                        @"ikea=Featured&ikea_price_asc=Price%20asc.&ikea_price_desc=Price%20desc." } }
+            })
+            {
+                var home = db.GetItem("/sitecore/content/home");
+
+                var expected = home.NameValuesToIndices("Title");
+                expected.ToHtmlString().Should().Be("{ name: 'ikea', label: 'Featured' },\r\n{ name: 'ikea_price_asc', label: 'Price asc.' },\r\n{ name: 'ikea_price_desc', label: 'Price desc.' }");
+            }
+        }
     }
 }

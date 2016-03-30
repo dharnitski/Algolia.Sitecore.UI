@@ -8,27 +8,23 @@
             instantsearch.widgets.sortBySelector({
                 container: '#sort-by-container-@Model.Rendering.UniqueId',
                 indices: [
-                    { name: 'ikea', label: 'Featured' },
-                    { name: 'ikea_price_asc', label: 'Price asc.' },
-                    { name: 'ikea_price_desc', label: 'Price desc.' }
-                ]
+                    @Model.Item.NameValuesToIndices("Indeces")
+                ],
+                label: '@Html.Sitecore().Field("Label")'
             })
         );
     </script>
 }
 else
 {
-    <select class="ais-sort-by-selector">
-        <option selected="" class="ais-sort-by-selector--item" value="instant_search">
-            Most relevant
-        </option>
-        <option class="ais-sort-by-selector--item" value="instant_search_price_asc">
-            Lowest price
-        </option>
-        <option class="ais-sort-by-selector--item" value="instant_search_price_desc">
-            Highest price
-        </option>
-    </select>
+    <div class="form-group">
+        <label>Indeces:</label>
+        @Html.Sitecore().Field("Indeces")
+    </div>
+    <div class="form-group">
+        <label>Label:</label>
+        @Html.Sitecore().Field("Label")
+    </div>
 }
 
 

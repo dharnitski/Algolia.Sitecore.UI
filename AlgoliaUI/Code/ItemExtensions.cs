@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.Specialized;
 using System.Linq;
+using System.Text;
 using System.Web;
 using Sitecore.Data.Items;
 
@@ -16,6 +18,35 @@ namespace AlgoliaUI.Code
             var decodedValue = HttpUtility.HtmlDecode(value);
 
             return new HtmlString(decodedValue);
+        }
+
+        public static IHtmlString NameValuesToIndices(this Item item, string fieldName)
+        {
+            var fieldValue =   item.Fields[fieldName].Value;
+            if (string.IsNullOrWhiteSpace(fieldValue))
+                return null;
+
+            NameValueCollection nameValueCollection = Sitecore.Web.WebUtil.ParseUrlParameters(fieldValue);
+
+            var sb = new StringBuilder();
+
+
+            //sample output
+            //{ name: 'ikea', label: 'Featured' },
+            //{ name: 'ikea_price_asc', label: 'Price asc.' },
+            //{ name: 'ikea_price_desc', label: 'Price desc.' }
+            foreach (string key in nameValueCollection)
+            {
+                var value = nameValueCollection[key];
+
+                sb.AppendLine($"{{ name: '{key}', label: '{value}' }},");
+            }
+            var result = sb.ToString();
+            //remove last comma
+            if (!string.IsNullOrEmpty(result))
+                result = result.Substring(0, result.Length - Environment.NewLine.Length - 1);
+
+            return new HtmlString(result);
         }
     }
 }

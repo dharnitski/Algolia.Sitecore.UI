@@ -133,7 +133,7 @@
     <Content Include="App_Config\Include\Unicorn\Unicorn.AutoPublish.config" />
     <Content Include="Areas\Algolia\Views\Web.config" />
     <Content Include="Areas\Algolia\Views\Stats.cshtml" />
-    <Content Include="Areas\Algolia\Views\RefinementList.cshtml" />
+    <Content Include="Areas\Algolia\Views\StarRating.cshtml" />
     <Content Include="Areas\Algolia\Views\SearchBox.cshtml" />
     <Content Include="Areas\Algolia\Views\Hits.cshtml" />
     <Content Include="Areas\Algolia\Views\HitsPerPageSelector.cshtml" />
@@ -142,6 +142,7 @@
     <Content Include="Areas\Algolia\Views\SortBySelector.cshtml" />
     <Content Include="Areas\Algolia\Views\HierarchicalMenu.cshtml" />
     <Content Include="Areas\Algolia\Views\ClearAll.cshtml" />
+    <Content Include="Areas\Algolia\Views\RefinementList.cshtml" />
     <None Include="Properties\PublishProfiles\sandbox.pubxml" />
   </ItemGroup>
   <ItemGroup>
