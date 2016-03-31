@@ -43,5 +43,21 @@ namespace AlgoliaUI.Tests
                 expected.ToHtmlString().Should().Be("{ name: 'ikea', label: 'Featured' },\r\n{ name: 'ikea_price_asc', label: 'Price asc.' },\r\n{ name: 'ikea_price_desc', label: 'Price desc.' }");
             }
         }
+
+        [Test]
+        public void ShouldParseOptions()
+        {
+            using (var db = new Db
+            {
+                new DbItem("Home") {{"Title",
+                        @"8=8%20per%20page&16=16%20per%20page&32=32%20per%20page" } }
+            })
+            {
+                var home = db.GetItem("/sitecore/content/home");
+
+                var expected = home.NameValuesToOptions("Title");
+                expected.ToHtmlString().Should().Be("{ value: 8, label: '8 per page' },\r\n{ value: 16, label: '16 per page' },\r\n{ value: 32, label: '32 per page' }");
+            }
+        }
     }
 }

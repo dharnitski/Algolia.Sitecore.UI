@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.Specialized;
+using System.Diagnostics.Eventing.Reader;
 using System.Linq;
 using System.Text;
 using System.Web;
@@ -20,9 +21,49 @@ namespace AlgoliaUI.Code
             return new HtmlString(decodedValue);
         }
 
+        public static string GetCheckBoxTrueFalse(this Item item, string fieldName)
+        {
+            var value = item.Fields[fieldName].Value;
+            if (string.IsNullOrWhiteSpace(value))
+                return "false";
+            if (value == "1")
+                return "true";
+            else return "false";
+        }
+
+        /// <summary>
+        /// sample output
+        /// { name: 'ikea', label: 'Featured' },
+        /// { name: 'ikea_price_asc', label: 'Price asc.' },
+        /// { name: 'ikea_price_desc', label: 'Price desc.' }
+        /// </summary>
+        /// <param name="item"></param>
+        /// <param name="fieldName"></param>
+        /// <returns></returns>
         public static IHtmlString NameValuesToIndices(this Item item, string fieldName)
         {
-            var fieldValue =   item.Fields[fieldName].Value;
+            return NameValuesToJsArray(item, fieldName, (key, value) => $"{{ name: '{key}', label: '{value}' }},");
+        }
+
+
+        /// <summary>
+        /// sample output
+        /// { value: 8, label: '8 per page' },
+        /// { value: 16, label: '16 per page' },
+        /// { value: 32, label: '32 per page' }
+        /// </summary>
+        /// <param name="item"></param>
+        /// <param name="fieldName"></param>
+        /// <returns></returns>
+        public static IHtmlString NameValuesToOptions(this Item item, string fieldName)
+        {
+            return NameValuesToJsArray(item, fieldName, (key, value) => $"{{ value: {key}, label: '{value}' }},");
+        }
+
+        private static IHtmlString NameValuesToJsArray(Item item, string fieldName,
+            Func<string, string, string> formatLineFunc)
+        {
+            var fieldValue = item.Fields[fieldName].Value;
             if (string.IsNullOrWhiteSpace(fieldValue))
                 return null;
 
@@ -30,16 +71,11 @@ namespace AlgoliaUI.Code
 
             var sb = new StringBuilder();
 
-
-            //sample output
-            //{ name: 'ikea', label: 'Featured' },
-            //{ name: 'ikea_price_asc', label: 'Price asc.' },
-            //{ name: 'ikea_price_desc', label: 'Price desc.' }
             foreach (string key in nameValueCollection)
             {
                 var value = nameValueCollection[key];
-
-                sb.AppendLine($"{{ name: '{key}', label: '{value}' }},");
+                var line = formatLineFunc(key, value);
+                sb.AppendLine(line);
             }
             var result = sb.ToString();
             //remove last comma
@@ -48,5 +84,7 @@ namespace AlgoliaUI.Code
 
             return new HtmlString(result);
         }
+
+
     }
 }

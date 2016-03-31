@@ -10,7 +10,7 @@
                 templates: {
                     link: @Model.Item.GetFieldDecodedRawValue("Link Template")
                 },
-                autoHideContainer: true
+                autoHideContainer:  @Model.Item.GetCheckBoxTrueFalse("Auto Hide Container")
             })
         );
     </script>
@@ -23,7 +23,7 @@ else
     </div>
     <div class="form-group">
         <label>Auto Hide Container:</label>
-        @Html.Sitecore().Field("Auto Hide Container")
+        @Html.Sitecore().Field("Auto Hide Container", new { Display = "Checkbox" })
     </div>
 }
 
