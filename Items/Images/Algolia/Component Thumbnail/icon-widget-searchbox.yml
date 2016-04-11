@@ -2,7 +2,7 @@
 ID: "7fb94c11-edd1-4180-8678-c7f9a8df08b0"
 Parent: "eb4ff3f5-66ce-4a40-80e8-aa7d39454a10"
 Template: "f1828a2c-7e5d-4bbd-98ca-320474871548"
-Path: "/sitecore/media library/Images/Algolia/Component Thumbnail/icon-widget-searchbox png"
+Path: "/sitecore/media library/Images/Algolia/Component Thumbnail/icon-widget-searchbox"
 DB: master
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"

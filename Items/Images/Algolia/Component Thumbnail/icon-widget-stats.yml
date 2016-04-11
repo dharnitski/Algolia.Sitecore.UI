@@ -2,7 +2,7 @@
 ID: "e7ad62e6-e9cc-4926-9fbd-c7edfc863aae"
 Parent: "eb4ff3f5-66ce-4a40-80e8-aa7d39454a10"
 Template: "f1828a2c-7e5d-4bbd-98ca-320474871548"
-Path: "/sitecore/media library/Images/Algolia/Component Thumbnail/icon-widget-stats png"
+Path: "/sitecore/media library/Images/Algolia/Component Thumbnail/icon-widget-stats"
 DB: master
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"

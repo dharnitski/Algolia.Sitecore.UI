@@ -1,0 +1,37 @@
+﻿@model RenderingModel
+
+@if (!Sitecore.Context.PageMode.IsPageEditorEditing)
+{
+    <div id="prices-@Model.Rendering.UniqueId" class="text-muted"></div>
+    <script>
+        search.addWidget(
+  instantsearch.widgets.priceRanges({
+      container: '#prices-@Model.Rendering.UniqueId',
+      attributeName: '@Html.Sitecore().Field("Attribute Name")',
+      cssClasses: {
+          list: 'nav nav-list',
+          count: 'badge pull-right',
+          active: 'active'
+      },
+      templates: {
+          //'<div class="facet-title">Prices</div class="facet-title">'
+          header: @Model.Item.GetFieldDecodedRawValue("Header Template")
+      }
+  })
+);
+    </script>
+}
+else
+{
+    <div class="form-group">
+        <label>Attribute Name:</label>
+        @Html.Sitecore().Field("Attribute Name")
+    </div>
+    <div class="form-group">
+        <label>Header Template:</label>
+        @Html.Sitecore().Field("Header Template")
+    </div>
+}
+
+
+

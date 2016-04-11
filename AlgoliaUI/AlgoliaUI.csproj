@@ -143,6 +143,7 @@
     <Content Include="Areas\Algolia\Views\HierarchicalMenu.cshtml" />
     <Content Include="Areas\Algolia\Views\ClearAll.cshtml" />
     <Content Include="Areas\Algolia\Views\RefinementList.cshtml" />
+    <Content Include="Areas\Algolia\Views\PriceRanges.cshtml" />
     <None Include="Properties\PublishProfiles\sandbox.pubxml" />
   </ItemGroup>
   <ItemGroup>
