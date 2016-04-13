@@ -1,0 +1,21 @@
+﻿---
+ID: "2afaf773-2339-4b2b-af3a-cb1c0bd998a4"
+Parent: "b13b4e03-6724-4622-894e-4aa2f3863b6b"
+Template: "44b1e917-cace-488f-8152-7a9cbe212f08"
+Path: /sitecore/system/Modules/Algolia/Refinement List Operators/and
+DB: master
+SharedFields:
+- ID: "8d53ed75-24d7-4440-b477-f5f05c747f1c"
+  Hint: Key
+  Value: and
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160412T225323
+    - ID: "dd87f403-428b-4a8c-80af-3beb1f00d620"
+      Hint: Value
+      Value: and

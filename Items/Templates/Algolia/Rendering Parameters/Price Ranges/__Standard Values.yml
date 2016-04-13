@@ -6,7 +6,7 @@ Path: /sitecore/templates/Algolia/Rendering Parameters/Price Ranges/__Standard V
 DB: master
 SharedFields:
 - ID: "b7ccf164-2ff0-4a5f-97ec-7ea7ea68729f"
-  Hint: Active
+  Hint: Css Classes Active
   Value: active
 Languages:
 - Language: en

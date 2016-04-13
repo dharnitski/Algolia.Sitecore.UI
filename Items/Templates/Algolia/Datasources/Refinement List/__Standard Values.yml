@@ -4,6 +4,10 @@ Parent: "d7138c70-f79e-4f4a-a7c6-b1872670be48"
 Template: "d7138c70-f79e-4f4a-a7c6-b1872670be48"
 Path: /sitecore/templates/Algolia/Datasources/Refinement List/__Standard Values
 DB: master
+SharedFields:
+- ID: "f8b4d64e-6776-4e77-8d4a-981ee4321bb6"
+  Hint: Limit
+  Value: 10
 Languages:
 - Language: en
   Versions:
@@ -15,6 +19,3 @@ Languages:
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: sitecore\admin
-    - ID: "f8b4d64e-6776-4e77-8d4a-981ee4321bb6"
-      Hint: Limit
-      Value: 10
