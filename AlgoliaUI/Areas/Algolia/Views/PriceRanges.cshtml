@@ -5,20 +5,19 @@
     <div id="prices-@Model.Rendering.UniqueId" class="text-muted"></div>
     <script>
         search.addWidget(
-  instantsearch.widgets.priceRanges({
-      container: '#prices-@Model.Rendering.UniqueId',
-      attributeName: '@Html.Sitecore().Field("Attribute Name")',
-      cssClasses: {
-          list: 'nav nav-list',
-          count: 'badge pull-right',
-          active: 'active'
-      },
-      templates: {
-          //'<div class="facet-title">Prices</div class="facet-title">'
-          header: @Model.Item.GetFieldDecodedRawValue("Header Template")
-      }
-  })
-);
+            instantsearch.widgets.priceRanges({
+                container: '#prices-@Model.Rendering.UniqueId',
+                attributeName: '@Html.Sitecore().Field("Attribute Name")',
+                cssClasses: {
+                    list: '@Model.Rendering.Parameters["Css Classes List"]',
+                    count: '@Model.Rendering.Parameters["Css Classes Count"]',
+                    active: '@Model.Rendering.Parameters["Css Classes Active"]'
+                },
+                templates: {
+                    header: @Model.Item.GetFieldDecodedRawValue("Header Template")
+                }
+            })
+        );
     </script>
 }
 else
