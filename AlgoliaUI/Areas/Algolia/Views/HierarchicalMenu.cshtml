@@ -7,7 +7,7 @@
         search.addWidget(
             instantsearch.widgets.hierarchicalMenu({
                 container: '#hierarchical-categories-@Model.Rendering.UniqueId',
-                attributes: ['category', 'sub_category', 'sub_sub_category'],
+                attributes: [@Model.Item.NameValuesToAttributes("Attributes")],
                 sortBy: ['@Html.Sitecore().Field("Sort By")'],
                 templates: {
                     item: @Model.Item.GetFieldDecodedRawValue("Item Template"),

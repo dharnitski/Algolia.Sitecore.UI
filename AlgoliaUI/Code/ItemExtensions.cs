@@ -60,6 +60,36 @@ namespace AlgoliaUI.Code
             return NameValuesToJsArray(item, fieldName, (key, value) => $"{{ value: {key}, label: '{value}' }},");
         }
 
+
+        /// <summary>
+        /// Sample Data - category=Cat&sub_category=Sub%20Cat&sub_sub_category=Sub%20Sub%20Category
+        /// Result - 'category', 'sub_category', 'sub_sub_category'
+        /// </summary>
+        /// <param name="item"></param>
+        /// <param name="fieldName"></param>
+        /// <returns></returns>
+        public static IHtmlString NameValuesToAttributes(this Item item, string fieldName)
+        {
+            var fieldValue = item.Fields[fieldName].Value;
+            if (string.IsNullOrWhiteSpace(fieldValue))
+                return null;
+
+            NameValueCollection nameValueCollection = Sitecore.Web.WebUtil.ParseUrlParameters(fieldValue);
+
+            var sb = new StringBuilder();
+
+            foreach (string key in nameValueCollection)
+            {
+                sb.Append($"'{key}', ");
+            }
+            var result = sb.ToString();
+
+            if (result.Length > 2)
+                result = result.Substring(0, result.Length - 2);
+
+            return new HtmlString(result);
+        }
+
         private static IHtmlString NameValuesToJsArray(Item item, string fieldName,
             Func<string, string, string> formatLineFunc)
         {

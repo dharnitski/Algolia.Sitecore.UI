@@ -16,10 +16,17 @@
 }
 else
 {
-    <div class="form-group">
-        <label>Options:</label>
-        @Html.Sitecore().Field("Options")
-    </div>
+    <select class="ais-hits-per-page-selector">
+        <option selected="" class="ais-hits-per-page-selector--item" value="6">
+            6 per page
+        </option>
+        <option class="ais-hits-per-page-selector--item" value="12">
+            12 per page
+        </option>
+        <option class="ais-hits-per-page-selector--item" value="24">
+            24 per page
+        </option>
+    </select>
 }
 
 

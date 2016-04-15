@@ -44,6 +44,24 @@ namespace AlgoliaUI.Tests
             }
         }
 
+        /// Sample Data - category=Cat&sub_category=Sub%20Cat&sub_sub_category=Sub%20Sub%20Category
+        /// Result - 'category', 'sub_category', 'sub_sub_category'
+        [Test]
+        public void ShouldParseAttributes()
+        {
+            using (var db = new Db
+            {
+                new DbItem("Home") {{"Title",
+                        @"category=Cat&sub_category=Sub%20Cat&sub_sub_category=Sub%20Sub%20Category" } }
+            })
+            {
+                var home = db.GetItem("/sitecore/content/home");
+
+                var expected = home.NameValuesToAttributes("Title");
+                expected.ToHtmlString().Should().Be("'category', 'sub_category', 'sub_sub_category'");
+            }
+        }
+
         [Test]
         public void ShouldParseOptions()
         {
