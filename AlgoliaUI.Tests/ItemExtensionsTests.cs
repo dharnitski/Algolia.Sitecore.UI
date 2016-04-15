@@ -18,29 +18,67 @@ namespace AlgoliaUI.Tests
         {
             using (var db = new Db
             {
-                new DbItem("Home") {{"Title", @"'&lt;div class=""facet - title""&gt;Materials&lt;/div class=""facet - title""&gt;'" } }
+                new DbItem("Home")
+                {
+                    {"Title", @"'&lt;div class=""facet - title""&gt;Materials&lt;/div class=""facet - title""&gt;'"}
+                }
             })
             {
                 var home = db.GetItem("/sitecore/content/home");
 
                 var expected = home.GetFieldDecodedRawValue("Title");
-                expected.ToHtmlString().Should().Be(@"'<div class=""facet - title"">Materials</div class=""facet - title"">'");
+                expected.ToHtmlString()
+                    .Should()
+                    .Be(@"'<div class=""facet - title"">Materials</div class=""facet - title"">'");
             }
         }
+
+
+        [Test]
+        public void ShouldParseCssClasses()
+        {
+            using (var db = new Db
+            {
+                new DbItem("Home")
+                {
+                    {
+                        "Title",
+                        @"list=nav%20nav-list&count=badge%20pull-right&active=active"
+                    }
+                }
+            })
+            {
+                var home = db.GetItem("/sitecore/content/home");
+
+                var expected = home.NameValuesToCssClasses("Title");
+                expected.ToHtmlString()
+                    .Should()
+                    .Be("list: 'nav nav-list',\r\ncount: 'badge pull-right',\r\nactive: 'active'");
+            }
+        }
+
 
         [Test]
         public void ShouldParseIndeses()
         {
             using (var db = new Db
             {
-                new DbItem("Home") {{"Title",
-                        @"ikea=Featured&ikea_price_asc=Price%20asc.&ikea_price_desc=Price%20desc." } }
+                new DbItem("Home")
+                {
+                    {
+                        "Title",
+                        @"ikea=Featured&ikea_price_asc=Price%20asc.&ikea_price_desc=Price%20desc."
+                    }
+                }
             })
             {
                 var home = db.GetItem("/sitecore/content/home");
 
                 var expected = home.NameValuesToIndices("Title");
-                expected.ToHtmlString().Should().Be("{ name: 'ikea', label: 'Featured' },\r\n{ name: 'ikea_price_asc', label: 'Price asc.' },\r\n{ name: 'ikea_price_desc', label: 'Price desc.' }");
+                expected.ToHtmlString()
+                    .Should()
+                    .Be(
+                        "{ name: 'ikea', label: 'Featured' },\r\n{ name: 'ikea_price_asc', label: 'Price asc.' },\r\n{ name: 'ikea_price_desc', label: 'Price desc.' }");
             }
         }
 
@@ -51,8 +89,13 @@ namespace AlgoliaUI.Tests
         {
             using (var db = new Db
             {
-                new DbItem("Home") {{"Title",
-                        @"category=Cat&sub_category=Sub%20Cat&sub_sub_category=Sub%20Sub%20Category" } }
+                new DbItem("Home")
+                {
+                    {
+                        "Title",
+                        @"category=Cat&sub_category=Sub%20Cat&sub_sub_category=Sub%20Sub%20Category"
+                    }
+                }
             })
             {
                 var home = db.GetItem("/sitecore/content/home");
@@ -67,14 +110,22 @@ namespace AlgoliaUI.Tests
         {
             using (var db = new Db
             {
-                new DbItem("Home") {{"Title",
-                        @"8=8%20per%20page&16=16%20per%20page&32=32%20per%20page" } }
+                new DbItem("Home")
+                {
+                    {
+                        "Title",
+                        @"8=8%20per%20page&16=16%20per%20page&32=32%20per%20page"
+                    }
+                }
             })
             {
                 var home = db.GetItem("/sitecore/content/home");
 
                 var expected = home.NameValuesToOptions("Title");
-                expected.ToHtmlString().Should().Be("{ value: 8, label: '8 per page' },\r\n{ value: 16, label: '16 per page' },\r\n{ value: 32, label: '32 per page' }");
+                expected.ToHtmlString()
+                    .Should()
+                    .Be(
+                        "{ value: 8, label: '8 per page' },\r\n{ value: 16, label: '16 per page' },\r\n{ value: 32, label: '32 per page' }");
             }
         }
     }

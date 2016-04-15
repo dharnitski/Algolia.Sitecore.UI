@@ -47,6 +47,20 @@ namespace AlgoliaUI.Code
 
 
         /// <summary>
+        /// sample result
+        /// list: 'nav nav-list',
+        /// count: 'badge pull-right',
+        /// active: 'active'
+        /// </summary>
+        /// <param name="item"></param>
+        /// <param name="fieldName"></param>
+        /// <returns></returns>
+        public static IHtmlString NameValuesToCssClasses(this Item item, string fieldName)
+        {
+            return NameValuesToJsArray(item, fieldName, (key, value) => $"{key}: '{value}',");
+        }
+
+        /// <summary>
         /// sample output
         /// { value: 8, label: '8 per page' },
         /// { value: 16, label: '16 per page' },

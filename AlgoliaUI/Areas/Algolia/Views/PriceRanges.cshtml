@@ -9,9 +9,7 @@
                 container: '#prices-@Model.Rendering.UniqueId',
                 attributeName: '@Html.Sitecore().Field("Attribute Name")',
                 cssClasses: {
-                    list: '@Model.Rendering.Parameters["Css Classes List"]',
-                    count: '@Model.Rendering.Parameters["Css Classes Count"]',
-                    active: '@Model.Rendering.Parameters["Css Classes Active"]'
+                   @Model.Item.NameValuesToCssClasses("Css Classes")
                 },
                 templates: {
                     header: @Model.Item.GetFieldDecodedRawValue("Header Template")

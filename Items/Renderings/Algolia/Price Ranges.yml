@@ -14,6 +14,10 @@ SharedFields:
 - ID: "7d24e54f-5c16-4314-90c9-6051aa1a7da1"
   Hint: Parameters Template
   Value: "{A9C710C2-6DB7-4FE6-8626-4D50191EE280}"
+- ID: "a2f5d9df-8cba-4a1d-99eb-51acb94cb057"
+  Hint: Page Editor Buttons
+  Type: Treelist
+  Value: "{005FF3CE-0CB6-4694-9D9D-5E3C8A4BEED1}"
 - ID: "b5b27af1-25ef-405c-87ce-369b3a004016"
   Hint: Datasource Location
   Value: ./Content/Algolia/
