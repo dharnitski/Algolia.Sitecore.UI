@@ -1,20 +1,16 @@
 ﻿---
-ID: "85888cd6-1ccc-4cc2-93c3-123c28717a9d"
-Parent: "46d65820-5bbf-4a5d-89e9-361af4ead659"
+ID: "d1caf1f9-c321-4a87-b95e-005990d120bc"
+Parent: "ef2215e0-c194-4856-b297-fb2b7f40c3ed"
 Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
-Path: /sitecore/templates/Algolia/Rendering Parameters/Price Ranges/Css Classes/Css Classes List
+Path: /sitecore/templates/Algolia/Datasources/Pagination/Search/Css Classes
 DB: master
 SharedFields:
 - ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
   Hint: Type
-  Value: "Single-Line Text"
+  Value: Name Value List
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
   Value: 100
-- ID: "be351a73-fcb0-4213-93fa-c302d8ab4f51"
-  Hint: Shared
-  Type: Checkbox
-  Value: 1
 Languages:
 - Language: en
   Versions:
@@ -22,4 +18,4 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20160411T192932
+      Value: 20160414T225228

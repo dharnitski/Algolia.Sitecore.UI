@@ -13,7 +13,7 @@ SharedFields:
   Value: /areas/Algolia/views/PriceRanges.cshtml
 - ID: "7d24e54f-5c16-4314-90c9-6051aa1a7da1"
   Hint: Parameters Template
-  Value: "{A9C710C2-6DB7-4FE6-8626-4D50191EE280}"
+  Value: 
 - ID: "a2f5d9df-8cba-4a1d-99eb-51acb94cb057"
   Hint: Page Editor Buttons
   Type: Treelist

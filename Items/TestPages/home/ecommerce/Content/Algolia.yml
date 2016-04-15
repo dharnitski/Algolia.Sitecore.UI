@@ -2,7 +2,7 @@
 ID: "8b75050a-03ef-42df-aa3f-7de4bcc9bd2e"
 Parent: "2cfbf4c3-db63-4740-a5f1-71eb0f2e5516"
 Template: "55bea852-8f70-4f68-aafb-f2130fd133d1"
-Path: /sitecore/content/AlgoliaSimpleUI/home/Content/Algolia
+Path: /sitecore/content/AlgoliaSimpleUI/home/ecommerce/Content/Algolia
 DB: master
 Languages:
 - Language: en

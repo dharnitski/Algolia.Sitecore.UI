@@ -1,0 +1,76 @@
+﻿---
+ID: "5fd2f2a8-4add-4dbd-80a4-1254fb946608"
+Parent: "37fcdcdc-7ed6-4d8c-b7f2-ad1ac324b3da"
+Template: "280e54fa-3614-40c8-97b2-94bf59ea4451"
+Path: /sitecore/content/AlgoliaSimpleUI/home/ecommerce
+DB: master
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{7B918C44-887B-4E30-AA2C-4615E4CFA5D2}"
+          p:before="r[@uid='{9E36DF0C-D325-4397-9D71-23C336AFCC88}']"
+          s:ds="{BD389781-626A-41EE-A6B5-9124671DE28C}"
+          s:id="{6648F896-2913-497F-8E85-E245721A3D35}"
+          s:ph="/Page Content/Main_93f40c5a-c6d0-4aeb-8fd0-d096f0178a5d/Right_c790210b-086a-41da-a277-51c0a1e0bc98/Center_ea9cc999-a98d-4140-9df9-f735bd097e2c" />
+        <r
+          uid="{9E36DF0C-D325-4397-9D71-23C336AFCC88}"
+          p:before="r[@uid='{EA9CC999-A98D-4140-9DF9-F735BD097E2C}']"
+          s:id="{9A62C9E6-92E5-4C42-82B6-99989DDFB933}"
+          s:ph="/Page Content/Main_93f40c5a-c6d0-4aeb-8fd0-d096f0178a5d/Right_c790210b-086a-41da-a277-51c0a1e0bc98" />
+        <r
+          uid="{EA9CC999-A98D-4140-9DF9-F735BD097E2C}"
+          p:before="r[@uid='{891F725E-E385-4ED8-8A7C-EACDF0807275}']"
+          s:id="{9A62C9E6-92E5-4C42-82B6-99989DDFB933}"
+          s:ph="/Page Content/Main_93f40c5a-c6d0-4aeb-8fd0-d096f0178a5d/Right_c790210b-086a-41da-a277-51c0a1e0bc98" />
+        <r
+          uid="{891F725E-E385-4ED8-8A7C-EACDF0807275}"
+          p:before="r[@uid='{69925CE4-A329-408E-BEDD-6D66502F9851}']"
+          s:ds="{0E9F88D8-5931-4495-B9EE-F9F617FBF2D5}"
+          s:id="{307562D7-5621-48A1-8194-A2F123E8D464}"
+          s:ph="/Page Content/Main_93f40c5a-c6d0-4aeb-8fd0-d096f0178a5d/Center_69925ce4-a329-408e-bedd-6d66502f9851" />
+        <r
+          uid="{69925CE4-A329-408E-BEDD-6D66502F9851}"
+          p:before="r[@uid='{C790210B-086A-41DA-A277-51C0A1E0BC98}']"
+          s:id="{9A62C9E6-92E5-4C42-82B6-99989DDFB933}"
+          s:ph="/Page Content/Main_93f40c5a-c6d0-4aeb-8fd0-d096f0178a5d" />
+        <r
+          uid="{C790210B-086A-41DA-A277-51C0A1E0BC98}"
+          p:before="r[@uid='{93F40C5A-C6D0-4AEB-8FD0-D096F0178A5D}']"
+          s:id="{CAC22B9A-D9F7-46B6-8AE4-97637759E179}"
+          s:ph="/Page Content/Main_93f40c5a-c6d0-4aeb-8fd0-d096f0178a5d" />
+        <r
+          uid="{93F40C5A-C6D0-4AEB-8FD0-D096F0178A5D}"
+          s:id="{2382B636-F01A-4F65-88D9-39C576FF7D73}"
+          s:ph="Page Content" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "199bad57-ce40-46c1-a8ea-054f3c4c4117"
+      Hint: Open Graph Page Title
+      Value: ecommerce
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160414T223756
+    - ID: "3db7bd0b-626c-4f94-8321-efc40c45c0d6"
+      Hint: Breadcrumb Title
+      Value: ecommerce
+    - ID: "4d3dca3f-59c0-4f7a-886e-277ad66b568a"
+      Hint: Default Title
+      Value: ecommerce
+    - ID: "4fc1cabf-f32b-428c-8c01-5c306c9ebbdb"
+      Hint: Page Title
+      Value: ecommerce
+    - ID: "5f2ed4e4-5b3e-4b26-87d9-e095a6e8e70d"
+      Hint: Meta Description
+      Value: ecommerce

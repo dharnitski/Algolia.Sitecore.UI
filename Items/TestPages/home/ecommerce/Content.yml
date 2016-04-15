@@ -1,8 +1,8 @@
 ﻿---
 ID: "2cfbf4c3-db63-4740-a5f1-71eb0f2e5516"
-Parent: "37fcdcdc-7ed6-4d8c-b7f2-ad1ac324b3da"
+Parent: "5fd2f2a8-4add-4dbd-80a4-1254fb946608"
 Template: "55bea852-8f70-4f68-aafb-f2130fd133d1"
-Path: /sitecore/content/AlgoliaSimpleUI/home/Content
+Path: /sitecore/content/AlgoliaSimpleUI/home/ecommerce/Content
 DB: master
 Languages:
 - Language: en

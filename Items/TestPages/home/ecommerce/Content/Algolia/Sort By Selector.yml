@@ -2,7 +2,7 @@
 ID: "70e0edb5-364d-431c-8849-1fef88f6fedb"
 Parent: "8b75050a-03ef-42df-aa3f-7de4bcc9bd2e"
 Template: "41e26ed7-a8d8-4eca-992f-a4cdce05f15d"
-Path: /sitecore/content/AlgoliaSimpleUI/home/Content/Algolia/Sort By Selector
+Path: /sitecore/content/AlgoliaSimpleUI/home/ecommerce/Content/Algolia/Sort By Selector
 DB: master
 Languages:
 - Language: en

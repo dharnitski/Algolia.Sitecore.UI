@@ -7,6 +7,9 @@
         search.addWidget(
             instantsearch.widgets.pagination({
                 container: '#pagination-container-@Model.Rendering.UniqueId',
+                cssClasses: {
+                    @Model.Item.NameValuesToCssClasses("Css Classes")
+                },
                 maxPages: 20,
                 // default is to scroll to 'body', here we disable this behavior
                 scrollTo: false

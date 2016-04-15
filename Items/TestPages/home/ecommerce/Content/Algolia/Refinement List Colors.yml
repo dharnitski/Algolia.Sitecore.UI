@@ -2,7 +2,7 @@
 ID: "3fc2d0c3-1875-4700-bb1f-4ec5489be2e1"
 Parent: "8b75050a-03ef-42df-aa3f-7de4bcc9bd2e"
 Template: "d7138c70-f79e-4f4a-a7c6-b1872670be48"
-Path: /sitecore/content/AlgoliaSimpleUI/home/Content/Algolia/Refinement List Colors
+Path: /sitecore/content/AlgoliaSimpleUI/home/ecommerce/Content/Algolia/Refinement List Colors
 DB: master
 SharedFields:
 - ID: "212a5101-580b-4b4f-81a8-d0856f7bffa7"

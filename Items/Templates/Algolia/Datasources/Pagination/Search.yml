@@ -1,8 +1,8 @@
 ﻿---
-ID: "46d65820-5bbf-4a5d-89e9-361af4ead659"
-Parent: "a9c710c2-6db7-4fe6-8626-4d50191ee280"
+ID: "ef2215e0-c194-4856-b297-fb2b7f40c3ed"
+Parent: "1488fd93-53a9-42ca-afb4-5a2bb52cae29"
 Template: "e269fbb5-3750-427a-9149-7aa950b49301"
-Path: /sitecore/templates/Algolia/Rendering Parameters/Price Ranges/Css Classes
+Path: /sitecore/templates/Algolia/Datasources/Pagination/Search
 DB: master
 Languages:
 - Language: en
@@ -11,7 +11,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20160411T192932
+      Value: 20160414T225228
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: sitecore\admin

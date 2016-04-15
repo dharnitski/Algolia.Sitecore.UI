@@ -2,7 +2,7 @@
 ID: "866a4345-46cf-461d-8029-4364f4b659ac"
 Parent: "8b75050a-03ef-42df-aa3f-7de4bcc9bd2e"
 Template: "908f15bd-46c4-45fd-84f7-87e95256b4c0"
-Path: /sitecore/content/AlgoliaSimpleUI/home/Content/Algolia/Price Ranges
+Path: /sitecore/content/AlgoliaSimpleUI/home/ecommerce/Content/Algolia/Price Ranges
 DB: master
 SharedFields:
 - ID: "8c8455c5-c1c8-42ac-bedf-64eff782c6b7"

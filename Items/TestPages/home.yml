@@ -17,17 +17,7 @@ SharedFields:
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Type: layout
-  Value: |
-    <r xmlns:p="p" xmlns:s="s"
-      p:p="1">
-      <d
-        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
-        <r
-          uid="{93F40C5A-C6D0-4AEB-8FD0-D096F0178A5D}"
-          s:id="{2382B636-F01A-4F65-88D9-39C576FF7D73}"
-          s:ph="Page Content" />
-      </d>
-    </r>
+  Value: 
 Languages:
 - Language: en
   Versions:

@@ -2,7 +2,7 @@
 ID: "c90296ad-b369-467d-819a-6788ed87d617"
 Parent: "8b75050a-03ef-42df-aa3f-7de4bcc9bd2e"
 Template: "c5171dce-cb00-4770-8a3a-b6cda88d300d"
-Path: /sitecore/content/AlgoliaSimpleUI/home/Content/Algolia/Search Box
+Path: /sitecore/content/AlgoliaSimpleUI/home/ecommerce/Content/Algolia/Search Box
 DB: master
 SharedFields:
 - ID: "58a9dae0-683c-41d3-80ea-8f43b0b7eaea"

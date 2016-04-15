@@ -1,17 +1,14 @@
 ﻿---
-ID: "a9c710c2-6db7-4fe6-8626-4d50191ee280"
-Parent: "bacdf6de-4215-4a0d-a930-65580defed0b"
+ID: "1488fd93-53a9-42ca-afb4-5a2bb52cae29"
+Parent: "5205f3a1-c482-4bcd-8699-0eb77b353352"
 Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
-Path: /sitecore/templates/Algolia/Rendering Parameters/Price Ranges
+Path: /sitecore/templates/Algolia/Datasources/Pagination
 DB: master
 SharedFields:
 - ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
   Hint: __Base template
   Type: tree list
-  Value: "{8CA06D6A-B353-44E8-BC31-B528C7306971}"
-- ID: "f7d48a55-2158-4f02-9356-756654404f73"
-  Hint: __Standard values
-  Value: "{01195E42-AC9B-4BFD-89AD-49C60E014105}"
+  Value: "{1930BBEB-7805-471A-A3BE-4858AC7CF696}"
 Languages:
 - Language: en
   Versions:
@@ -19,7 +16,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20160411T192900
+      Value: 20160414T225130
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: sitecore\admin
