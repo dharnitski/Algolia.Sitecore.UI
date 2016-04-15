@@ -1,0 +1,14 @@
+﻿---
+ID: "2cfbf4c3-db63-4740-a5f1-71eb0f2e5516"
+Parent: "37fcdcdc-7ed6-4d8c-b7f2-ad1ac324b3da"
+Template: "55bea852-8f70-4f68-aafb-f2130fd133d1"
+Path: /sitecore/content/AlgoliaSimpleUI/home/Content
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160325T135345

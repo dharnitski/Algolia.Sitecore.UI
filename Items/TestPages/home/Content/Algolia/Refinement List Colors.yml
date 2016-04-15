@@ -1,0 +1,33 @@
+﻿---
+ID: "3fc2d0c3-1875-4700-bb1f-4ec5489be2e1"
+Parent: "8b75050a-03ef-42df-aa3f-7de4bcc9bd2e"
+Template: "d7138c70-f79e-4f4a-a7c6-b1872670be48"
+Path: /sitecore/content/AlgoliaSimpleUI/home/Content/Algolia/Refinement List Colors
+DB: master
+SharedFields:
+- ID: "212a5101-580b-4b4f-81a8-d0856f7bffa7"
+  Hint: Operator
+  Value: or
+- ID: "f8b4d64e-6776-4e77-8d4a-981ee4321bb6"
+  Hint: Limit
+  Value: 10
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160328T210515
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: sitecore\admin
+    - ID: "97e7260f-fa41-40f9-aac5-63b9f48af531"
+      Hint: Header Template
+      Value: "'&lt;div class=\"facet-title\"&gt;Colors&lt;/div class=\"facet-title\"&gt;'"
+    - ID: "accf7ef7-3997-47e2-bafd-bb4308e8a05a"
+      Hint: Attribute Name
+      Value: colors
+    - ID: "f187f6aa-32a5-4b1a-840d-b037ddb63bf5"
+      Hint: Item Template
+      Value: "'&lt;a href=\"javascript:void(0);\" data-facet-value=\"{{name}}\" class=\"facet-color {{#isRefined}}checked{{/isRefined}}\"&gt;&lt;/a&gt;'"

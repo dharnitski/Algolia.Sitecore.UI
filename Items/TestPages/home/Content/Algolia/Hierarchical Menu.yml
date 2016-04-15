@@ -1,0 +1,29 @@
+﻿---
+ID: "c59d1512-2e0e-44fa-9bcc-6b4bb2b25bd2"
+Parent: "8b75050a-03ef-42df-aa3f-7de4bcc9bd2e"
+Template: "4b429c54-1964-41e4-baab-8d827a1a4332"
+Path: /sitecore/content/AlgoliaSimpleUI/home/Content/Algolia/Hierarchical Menu
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160327T181548
+    - ID: "28d699bd-49bf-454e-9017-1b25998f0a52"
+      Hint: Attributes
+      Value: category=Cat&sub_category=Sub%20Cat&sub_sub_category=Sub%20Sub%20Category
+    - ID: "3cc11824-94d7-4739-bd0c-614e0856f47d"
+      Hint: Item Template
+      Value: "'&lt;a href=\"javascript:void(0);\" class=\"facet-item {{#isRefined}}active{{/isRefined}}\"&gt;&lt;span class=\"facet-name\"&gt;&lt;i class=\"fa fa-angle-right\"&gt;&lt;/i&gt; {{name}}&lt;/span class=\"facet-name\"&gt;&lt;/a&gt;'"
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: sitecore\admin
+    - ID: "5e02e5fc-7a34-4a3c-9d8c-e635122fbe35"
+      Hint: Header Template
+      Value: 'Show results for'
+    - ID: "848383a7-ab70-4464-ac75-34fb382682a2"
+      Hint: Sort By
+      Value: "name:asc"

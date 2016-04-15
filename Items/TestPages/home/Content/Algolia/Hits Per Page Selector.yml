@@ -1,0 +1,20 @@
+﻿---
+ID: "284dcc3c-6092-4382-beb3-56c928f54575"
+Parent: "8b75050a-03ef-42df-aa3f-7de4bcc9bd2e"
+Template: "520953ef-81a7-4993-99ce-54d41c459f6b"
+Path: /sitecore/content/AlgoliaSimpleUI/home/Content/Algolia/Hits Per Page Selector
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160327T213837
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: sitecore\admin
+    - ID: "fe9edc7d-cc94-4563-b1c1-b1f157205421"
+      Hint: Options
+      Value: 8=8%20per%20page&16=16%20per%20page&32=32%20per%20page
