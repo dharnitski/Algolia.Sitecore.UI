@@ -1,0 +1,94 @@
+﻿---
+ID: "005ff3ce-0cb6-4694-9d9d-5e3c8a4beed1"
+Parent: "db662edf-5965-4848-ad14-ba6bf0d55d1e"
+Template: "02404208-46d4-49bf-988b-eb363a52a1c9"
+Path: /sitecore/content/Applications/WebEdit/Custom Experience Buttons/Edit Fields
+DB: core
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Control/32x32/checklist_h.png
+- ID: "1bb289d6-44d7-4fcc-af15-db32b841f957"
+  Hint: Click
+  Value: "algoliacommands:EditFields(command={005FF3CE-0CB6-4694-9D9D-5E3C8A4BEED1},fields=Item Template,fieldTypes=Name Value List)"
+- ID: "e8cc41c7-c304-4282-b782-e21ca32d324c"
+  Hint: Icon
+  Value: Control/32x32/checklist_h.png
+Languages:
+- Language: da
+  Fields:
+  - ID: "371e0d96-4f00-4b80-ad14-6284e00493ba"
+    Hint: Tooltip
+    Value: Sorter indholdet.
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Sorter
+  - ID: "c523aba8-d1a1-4dcb-aeee-52635a4ab2ae"
+    Hint: Header
+    Value: Sorter indhold.
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: "20151021T212458:635810594982436397"
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: sitecore\admin
+- Language: "de-DE"
+  Fields:
+  - ID: "371e0d96-4f00-4b80-ad14-6284e00493ba"
+    Hint: Tooltip
+    Value: Den Inhalt ordnen.
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Sortieren
+  - ID: "c523aba8-d1a1-4dcb-aeee-52635a4ab2ae"
+    Hint: Header
+    Value: Inhalt ordnen.
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: "20151021T212939:635810597796482137"
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: sitecore\admin
+- Language: en
+  Fields:
+  - ID: "371e0d96-4f00-4b80-ad14-6284e00493ba"
+    Hint: Tooltip
+    Value: Edit the fields.
+  - ID: "c523aba8-d1a1-4dcb-aeee-52635a4ab2ae"
+    Hint: Header
+    Value: Edit the fields.
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20120222T111100
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: sitecore\admin
+- Language: "ja-JP"
+  Fields:
+  - ID: "371e0d96-4f00-4b80-ad14-6284e00493ba"
+    Hint: Tooltip
+    Value: コンテンツを並べ替えします
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: 並べ替え
+  - ID: "c523aba8-d1a1-4dcb-aeee-52635a4ab2ae"
+    Hint: Header
+    Value: コンテンツの並べ替え
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: "20151021T213350:635810600302968799"
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: sitecore\admin
