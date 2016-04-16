@@ -1,0 +1,23 @@
+﻿---
+ID: "c6b9a707-89d8-4049-9472-1a2fa72fdfe9"
+Parent: "89a7de3c-cb0b-4b90-889e-80bde9ef10f5"
+Template: "d0fcec50-d82f-498d-8637-96011420b217"
+Path: /sitecore/content/AlgoliaSimpleUI/home/tourism/Content/Algolia/Search Script
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "22989f26-2a07-4bae-81b6-c01ed982e267"
+      Hint: Application Read Only Key
+      Value: 6be0576ff61c053d5f9a3225e2a90f76
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160416T000830
+    - ID: "96354535-a1b9-467c-9f1d-a7b1d96d713b"
+      Hint: Application Id
+      Value: latency
+    - ID: "a5454879-2e81-4d72-816e-c68eec5e804c"
+      Hint: Index Name
+      Value: airbnb

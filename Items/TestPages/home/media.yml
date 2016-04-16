@@ -8,6 +8,9 @@ SharedFields:
 - ID: "3749597e-f34d-4096-831e-1dbac7181fd7"
   Hint: Cascaded Placeholders
   Value: "{\"FE5D7FDF89C04D999AA3B5FBD009C9F3\":{\"cascade\":[]}}"
+- ID: "73416429-c9b7-42bd-8410-f98a62814848"
+  Hint: Page Header Scripts
+  Value: "<link href=\"/css/samples/media.css\" rel=\"stylesheet\"/>"
 - ID: "e436d992-e6ba-41ac-aa66-e3dcf397037c"
   Hint: Annotations
   Value: "[]"
@@ -20,10 +23,22 @@ SharedFields:
       <d
         id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
         <r
+          uid="{D7C34374-E30C-4055-99DB-8740532F83CF}"
+          p:before="r[@uid='{95D34EF8-A1CA-4310-B0F4-43A6ED6AC509}']"
+          s:ds="{04748027-0FC1-4902-AA90-502314F36F50}"
+          s:id="{A625C796-5CCE-43A6-87F1-C5D0DE10F355}"
+          s:ph="/Page Content/Main_11b69412-d0d9-419d-81e5-72ab219a8139/Center_304d6e0f-3dbb-4f8c-a935-646ed27553e3" />
+        <r
           uid="{95D34EF8-A1CA-4310-B0F4-43A6ED6AC509}"
-          p:before="r[@uid='{B4B916D1-E7A6-41E9-B738-4225431446E2}']"
+          p:before="r[@uid='{FD469759-9A16-4584-A351-22159E9BE534}']"
           s:ds="{EFA42466-5D6F-4538-BD0B-B38BF6FDCDE7}"
           s:id="{FDB01ACD-75A7-4722-9D8B-886BD9FEC207}"
+          s:ph="/Page Content/Main_11b69412-d0d9-419d-81e5-72ab219a8139/Left_602a1aec-f1ce-41f6-a0a7-de0eb98e404b" />
+        <r
+          uid="{FD469759-9A16-4584-A351-22159E9BE534}"
+          p:before="r[@uid='{B4B916D1-E7A6-41E9-B738-4225431446E2}']"
+          s:ds="{CC5FBD0A-A092-4C1C-9E98-1FBB8682142C}"
+          s:id="{0FADCFF1-FC26-43D3-B371-015A553B14C9}"
           s:ph="/Page Content/Main_11b69412-d0d9-419d-81e5-72ab219a8139/Left_602a1aec-f1ce-41f6-a0a7-de0eb98e404b" />
         <r
           uid="{B4B916D1-E7A6-41E9-B738-4225431446E2}"

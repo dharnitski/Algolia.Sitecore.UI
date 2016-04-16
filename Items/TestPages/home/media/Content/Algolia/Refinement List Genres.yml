@@ -7,7 +7,7 @@ DB: master
 SharedFields:
 - ID: "212a5101-580b-4b4f-81a8-d0856f7bffa7"
   Hint: Operator
-  Value: and
+  Value: "{2AFAF773-2339-4B2B-AF3A-CB1C0BD998A4}"
 - ID: "f8b4d64e-6776-4e77-8d4a-981ee4321bb6"
   Hint: Limit
   Value: 10

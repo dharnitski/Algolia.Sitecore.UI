@@ -1,0 +1,20 @@
+﻿---
+ID: "8483b399-622c-481d-a77a-b4b011511aeb"
+Parent: "89a7de3c-cb0b-4b90-889e-80bde9ef10f5"
+Template: "1488fd93-53a9-42ca-afb4-5a2bb52cae29"
+Path: /sitecore/content/AlgoliaSimpleUI/home/tourism/Content/Algolia/Pagination
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160416T001742
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: sitecore\admin
+    - ID: "d1caf1f9-c321-4a87-b95e-005990d120bc"
+      Hint: Css Classes
+      Value: root=pagination&active=active

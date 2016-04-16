@@ -1,0 +1,26 @@
+﻿---
+ID: "cc5fbd0a-a092-4c1c-9e98-1fbb8682142c"
+Parent: "13e82440-de3f-49aa-9160-6ebeb1784cfd"
+Template: "6d691373-4a08-476c-b7f7-612e01194cd9"
+Path: /sitecore/content/AlgoliaSimpleUI/home/media/Content/Algolia/Star Rating
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0b97e867-a9ba-4a15-94ed-d298b6a9471e"
+      Hint: Css Classes
+      Value: "list=nav&count=badge%20pull-right"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160415T233813
+    - ID: "53d617d8-d5c8-4ecc-ac9f-c5d2b9f703cb"
+      Hint: Header Template
+      Value: 'Rating'
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: sitecore\admin
+    - ID: "714eca06-6b41-48e9-8ba3-282475a2c1e3"
+      Hint: Attribute Name
+      Value: rating

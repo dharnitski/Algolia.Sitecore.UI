@@ -1,0 +1,23 @@
+﻿---
+ID: "e5f15b17-bdd4-4d1a-a614-6d5bf4d48f82"
+Parent: "89a7de3c-cb0b-4b90-889e-80bde9ef10f5"
+Template: "446b05ee-9442-455a-9684-038be070a2ad"
+Path: /sitecore/content/AlgoliaSimpleUI/home/tourism/Content/Algolia/Hits
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "13088283-8a71-48fa-a17b-788272d15584"
+      Hint: Empty Template
+      Value: "'&lt;div class=\"text-center\"&gt;No results found matching &lt;strong&gt;{{query}}&lt;/strong&gt;.&lt;/div&gt;'"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160416T001458
+    - ID: "dc5c6a0d-cce0-44fd-b8d7-4e205ef3301e"
+      Hint: Item Template
+      Value: "'&lt;div class=\"hit col-sm-3\"&gt;' +&nbsp; '&lt;div class=\"pictures-wrapper\"&gt;' +&nbsp; &nbsp; '&lt;img class=\"picture\" src=\"{{picture_url}}\" /&gt;' +&nbsp; &nbsp; '&lt;img class=\"profile\" src=\"{{user.user.thumbnail_url}}\" /&gt;' +&nbsp; '&lt;/div&gt;' +&nbsp; '&lt;div class=\"infos\"&gt;' +&nbsp; '&lt;h4 class=\"media-heading\"&gt;{{{_highlightResult.name.value}}}&lt;/h4&gt;' +&nbsp; '&lt;p&gt;{{room_type}} - {{{_highlightResult.city.value}}}, {{{_highlightResult.country.value}}}&lt;/p&gt;' +&nbsp; '&lt;/div&gt;' +&nbsp; '&lt;/div&gt;'"
+    - ID: "f3cd0a9f-c4b4-4f21-af3f-116e59a6b23e"
+      Hint: Hits Per Page
+      Value: 12
