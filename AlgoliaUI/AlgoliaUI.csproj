@@ -120,6 +120,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\samples\commerce.css" />
+    <Content Include="css\samples\media.css" />
+    <Content Include="css\samples\tourism.css" />
     <Content Include="packages.config" />
     <Content Include="App_Config\Include\Rainbow.config">
       <SubType>Designer</SubType>

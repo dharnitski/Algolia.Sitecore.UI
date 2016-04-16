@@ -8,6 +8,9 @@ SharedFields:
 - ID: "3749597e-f34d-4096-831e-1dbac7181fd7"
   Hint: Cascaded Placeholders
   Value: "{\"FE5D7FDF89C04D999AA3B5FBD009C9F3\":{\"cascade\":[]}}"
+- ID: "73416429-c9b7-42bd-8410-f98a62814848"
+  Hint: Page Header Scripts
+  Value: "<link href=\"/css/samples/commerce.css\" rel=\"stylesheet\"/>"
 - ID: "e436d992-e6ba-41ac-aa66-e3dcf397037c"
   Hint: Annotations
   Value: "[]"
