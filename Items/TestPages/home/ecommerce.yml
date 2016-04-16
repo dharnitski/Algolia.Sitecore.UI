@@ -5,6 +5,12 @@ Template: "280e54fa-3614-40c8-97b2-94bf59ea4451"
 Path: /sitecore/content/AlgoliaSimpleUI/home/ecommerce
 DB: master
 SharedFields:
+- ID: "3749597e-f34d-4096-831e-1dbac7181fd7"
+  Hint: Cascaded Placeholders
+  Value: "{\"FE5D7FDF89C04D999AA3B5FBD009C9F3\":{\"cascade\":[]}}"
+- ID: "e436d992-e6ba-41ac-aa66-e3dcf397037c"
+  Hint: Annotations
+  Value: "[]"
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Type: layout
@@ -13,6 +19,12 @@ SharedFields:
       p:p="1">
       <d
         id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{B3E4CC2B-D84C-4C07-B86D-C50B0BB5503C}"
+          p:before="r[@uid='{7B918C44-887B-4E30-AA2C-4615E4CFA5D2}']"
+          s:ds="{26746DBA-6E84-4A83-9833-D39034A3B1BB}"
+          s:id="{FDB01ACD-75A7-4722-9D8B-886BD9FEC207}"
+          s:ph="/Page Content/Main_93f40c5a-c6d0-4aeb-8fd0-d096f0178a5d/Left_c790210b-086a-41da-a277-51c0a1e0bc98" />
         <r
           uid="{7B918C44-887B-4E30-AA2C-4615E4CFA5D2}"
           p:before="r[@uid='{9E36DF0C-D325-4397-9D71-23C336AFCC88}']"
@@ -56,6 +68,9 @@ Languages:
   Versions:
   - Version: 1
     Fields:
+    - ID: "0167263e-eff0-4cfc-93c9-9e7ec5145e90"
+      Hint: Final Cascaded Placeholders
+      Value: "{\"FE5D7FDF89C04D999AA3B5FBD009C9F3\":{\"cascade\":[],\"uncascade\":[]}}"
     - ID: "199bad57-ce40-46c1-a8ea-054f3c4c4117"
       Hint: Open Graph Page Title
       Value: ecommerce

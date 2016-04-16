@@ -1,4 +1,4 @@
-﻿@model RenderingModel
+﻿@model AlgoliaUI.Code.Models.RefinementListModel
 
 @if (!Sitecore.Context.PageMode.IsPageEditorEditing)
 {
@@ -11,8 +11,8 @@
                 operator: 'or',
                 limit: @Html.Sitecore().Field("Limit"),
                 templates: {
-                    item: @Model.Item.GetFieldDecodedRawValue("Item Template"),
-                    header: @Model.Item.GetFieldDecodedRawValue("Header Template")
+                    @Model.HeaderTemplate
+                    @Model.ItemTemplate
                 }
             })
         );

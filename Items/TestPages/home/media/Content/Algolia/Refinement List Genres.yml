@@ -22,15 +22,9 @@ Languages:
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: sitecore\admin
-    - ID: "97e7260f-fa41-40f9-aac5-63b9f48af531"
-      Hint: Header Template
-      Value: 
     - ID: "98df8f22-e378-45ed-848e-9fae3e2e77f2"
       Hint: Css Classes
       Value: "list=nav%20nav-list&count=badge%20pull-right&active=active"
     - ID: "accf7ef7-3997-47e2-bafd-bb4308e8a05a"
       Hint: Attribute Name
       Value: genre
-    - ID: "f187f6aa-32a5-4b1a-840d-b037ddb63bf5"
-      Hint: Item Template
-      Value: 

@@ -21,6 +21,9 @@ SharedFields:
 - ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
   Hint: __Thumbnail
   Value: "<image mediaid=\"{DCC3ACA6-0D3C-41AD-9277-D63000B106D0}\" />"
+- ID: "ddab263e-b42e-419a-aa6f-081b7393ca38"
+  Hint: Model
+  Value: /sitecore/layout/Models/Algolia/Refinement List
 Languages:
 - Language: en
   Versions:
