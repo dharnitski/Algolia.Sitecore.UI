@@ -10,9 +10,8 @@
                 cssClasses: {
                     @Model.Item.NameValuesToCssClasses("Css Classes")
                 },
-                maxPages: 20,
-                // default is to scroll to 'body', here we disable this behavior
-                scrollTo: false
+                maxPages: @Model.Item["Max Pages"],
+                scrollTo: '@Model.Item["Scroll To"]'
             })
         );
     </script>
