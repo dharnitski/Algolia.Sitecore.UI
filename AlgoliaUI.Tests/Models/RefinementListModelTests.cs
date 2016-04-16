@@ -1,6 +1,7 @@
 ﻿using AlgoliaUI.Code.Models;
 using FluentAssertions;
 using NUnit.Framework;
+using Sitecore.Data;
 using Sitecore.FakeDb;
 using Sitecore.Mvc.Presentation;
 
@@ -55,6 +56,35 @@ namespace AlgoliaUI.Tests.Models
                 var sut = new RefinementListModel { Rendering = rendering };
 
                 var actual = sut.ItemTemplate.ToString();
+                actual.Should().Be(expected);
+            }
+        }
+
+        [TestCase("or", "or")]
+        [TestCase("and", "and")]
+        public void OperatorTest(string key, string expected)
+        {
+            var valueId = ID.NewID;
+            using (var db = new Db
+            {
+                new DbItem("value", valueId)
+                {
+                    {"key", key }
+                },
+                new DbItem("home")
+                {
+                    {"Operator", valueId.ToString()}
+                }
+            })
+            {
+                var rendering = new Rendering
+                {
+                    Item = db.GetItem("/sitecore/content/home")
+                };
+
+                var sut = new RefinementListModel { Rendering = rendering };
+
+                var actual = sut.Operator;
                 actual.Should().Be(expected);
             }
         }

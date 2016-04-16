@@ -8,7 +8,7 @@
             instantsearch.widgets.refinementList({
                 container: '#refinement-list-@Model.Rendering.UniqueId',
                 attributeName: '@Html.Sitecore().Field("Attribute Name")',
-                operator: 'or',
+                operator: '@Model.Operator',
                 limit: @Html.Sitecore().Field("Limit"),
                 templates: {
                     @Model.HeaderTemplate
@@ -27,10 +27,6 @@ else
     <div class="form-group">
         <label>Limit:</label>
         @Html.Sitecore().Field("Limit")
-    </div>
-    <div class="form-group">
-        <label>Operator:</label>
-        @Html.Sitecore().Field("Operator")
     </div>
     <div class="form-group">
         <label>Header Template:</label>

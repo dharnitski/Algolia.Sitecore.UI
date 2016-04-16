@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Web;
+using Sitecore.Diagnostics;
 using Sitecore.Mvc.Presentation;
 
 namespace AlgoliaUI.Code.Models
@@ -12,6 +13,25 @@ namespace AlgoliaUI.Code.Models
             {
                 return GetPropertyValue("item", "Item Template", GetFieldDecodedRawValue);
             }
+        }
+
+        private const string DefaultOperator = "or"; 
+
+        public string Operator
+        {
+            get
+            {
+                string dropDownItemId = Item["Operator"];
+                if (string.IsNullOrEmpty(dropDownItemId))
+                    return DefaultOperator;
+                var valueItem = Item.Database.GetItem(dropDownItemId);
+                if (valueItem == null)
+                {
+                    Log.Error("Cannot find item " + dropDownItemId, this);
+                    return DefaultOperator;
+                }
+                return valueItem["key"];
+            } 
         }
 
         public IHtmlString HeaderTemplate
