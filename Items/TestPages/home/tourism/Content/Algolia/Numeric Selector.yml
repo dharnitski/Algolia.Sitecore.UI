@@ -1,0 +1,20 @@
+﻿---
+ID: "5bcc97b2-e12f-425f-a2bf-19c1496fb8ee"
+Parent: "89a7de3c-cb0b-4b90-889e-80bde9ef10f5"
+Template: "b9c0bba1-e3f6-49ac-b3ff-e01f08206534"
+Path: /sitecore/content/AlgoliaSimpleUI/home/tourism/Content/Algolia/Numeric Selector
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160416T183125
+    - ID: "45333ba1-7869-4e64-b483-8d57c95ad6da"
+      Hint: Attribute Name
+      Value: person_capacity
+    - ID: "bf64fafb-69b4-4fa6-a91c-b15d1058ece5"
+      Hint: Options
+      Value: 1=1%20guest&2=2%20guests&3=3%20guests&4=4%20guests&5=5%20guests&6=6%20guests

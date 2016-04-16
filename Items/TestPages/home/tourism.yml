@@ -23,6 +23,12 @@ SharedFields:
       <d
         id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
         <r
+          uid="{83F3ED31-278E-4B93-8FA3-FBE29E09BAFE}"
+          p:before="r[@uid='{3B0B0DFD-8031-4E65-A2F7-384D5B9ABCDB}']"
+          s:ds="{5BCC97B2-E12F-425F-A2BF-19C1496FB8EE}"
+          s:id="{FF62FCA9-6F44-4A84-8C89-0FC2DD1DF167}"
+          s:ph="/Page Content/Main_a2b07e4d-fcec-4ddd-8289-be5a499ac812/Left_2dc5866b-3a2b-4c3a-b993-98e8ba675fc8" />
+        <r
           uid="{3B0B0DFD-8031-4E65-A2F7-384D5B9ABCDB}"
           p:before="r[@uid='{EBA50E05-2DED-482D-9B02-EAEC975E2C74}']"
           s:ds="{E5F15B17-BDD4-4D1A-A614-6D5BF4D48F82}"

@@ -164,6 +164,7 @@
   <ItemGroup>
     <Compile Include="Code\Commands\EditFieldsCommand.cs" />
     <Compile Include="Code\ItemExtensions.cs" />
+    <Compile Include="Code\Models\NumericSelectorModel.cs" />
     <Compile Include="Code\Models\RefinementListModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

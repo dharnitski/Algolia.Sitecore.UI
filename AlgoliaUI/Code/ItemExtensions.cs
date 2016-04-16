@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Web;
 using Sitecore.Data.Items;
+using Sitecore.Diagnostics;
 
 namespace AlgoliaUI.Code
 {
@@ -74,6 +75,27 @@ namespace AlgoliaUI.Code
             return NameValuesToJsArray(item, fieldName, (key, value) => $"{{ value: {key}, label: '{value}' }},");
         }
 
+        /// <summary>
+        /// Get Key from Reference Item
+        /// </summary>
+        /// <param name="item"></param>
+        /// <param name="fieldName"></param>
+        /// <returns></returns>
+        public static IHtmlString ReferenceKey(this Item item, string fieldName, string defaultValue)
+        {
+           
+                string dropDownItemId = item[fieldName];
+                if (string.IsNullOrEmpty(dropDownItemId))
+                    return new HtmlString(defaultValue);
+                var valueItem = item.Database.GetItem(dropDownItemId);
+                if (valueItem == null)
+                {
+                    Log.Error("Cannot find item " + dropDownItemId, item);
+                    return new HtmlString(defaultValue);
+                }
+                return new HtmlString(valueItem["key"]);
+        }
+
 
         /// <summary>
         /// Sample Data - category=Cat&sub_category=Sub%20Cat&sub_sub_category=Sub%20Sub%20Category
@@ -104,7 +126,7 @@ namespace AlgoliaUI.Code
             return new HtmlString(result);
         }
 
-        private static IHtmlString NameValuesToJsArray(Item item, string fieldName,
+        internal static IHtmlString NameValuesToJsArray(Item item, string fieldName,
             Func<string, string, string> formatLineFunc)
         {
             var fieldValue = item.Fields[fieldName].Value;

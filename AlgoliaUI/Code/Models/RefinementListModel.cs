@@ -17,20 +17,11 @@ namespace AlgoliaUI.Code.Models
 
         private const string DefaultOperator = "or"; 
 
-        public string Operator
+        public IHtmlString Operator
         {
             get
             {
-                string dropDownItemId = Item["Operator"];
-                if (string.IsNullOrEmpty(dropDownItemId))
-                    return DefaultOperator;
-                var valueItem = Item.Database.GetItem(dropDownItemId);
-                if (valueItem == null)
-                {
-                    Log.Error("Cannot find item " + dropDownItemId, this);
-                    return DefaultOperator;
-                }
-                return valueItem["key"];
+                return Item.ReferenceKey("Operator", DefaultOperator);
             } 
         }
 
@@ -50,7 +41,7 @@ namespace AlgoliaUI.Code.Models
             return new HtmlString($"{jsFieldName}: {getFieldvalue(fieldName)},");
         }
 
-        public string GetFieldDecodedRawValue(string fieldName)
+        private string GetFieldDecodedRawValue(string fieldName)
         {
             var value = Item.Fields[fieldName].Value;
             if (string.IsNullOrWhiteSpace(value))

@@ -84,7 +84,7 @@ namespace AlgoliaUI.Tests.Models
 
                 var sut = new RefinementListModel { Rendering = rendering };
 
-                var actual = sut.Operator;
+                var actual = sut.Operator.ToString();
                 actual.Should().Be(expected);
             }
         }
