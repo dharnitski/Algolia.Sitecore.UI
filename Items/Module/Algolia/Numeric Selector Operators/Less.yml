@@ -1,0 +1,21 @@
+﻿---
+ID: "5b39d12d-e82e-4262-8356-537d6cee1395"
+Parent: "8af43b31-b40b-4fc6-803a-0c93a8691e66"
+Template: "44b1e917-cace-488f-8152-7a9cbe212f08"
+Path: /sitecore/system/Modules/Algolia/Numeric Selector Operators/Less
+DB: master
+SharedFields:
+- ID: "8d53ed75-24d7-4440-b477-f5f05c747f1c"
+  Hint: Key
+  Value: <
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160416T110423
+    - ID: "dd87f403-428b-4a8c-80af-3beb1f00d620"
+      Hint: Value
+      Value: <

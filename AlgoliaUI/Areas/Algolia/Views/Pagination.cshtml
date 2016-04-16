@@ -2,11 +2,11 @@
 
 @if (!Sitecore.Context.PageMode.IsPageEditorEditing)
 {
-    <div id="pagination-container-@Model.Rendering.UniqueId" class="text-muted"></div>
+    <div id="pagination-@Model.Rendering.UniqueId" class="text-muted"></div>
     <script>
         search.addWidget(
             instantsearch.widgets.pagination({
-                container: '#pagination-container-@Model.Rendering.UniqueId',
+                container: '#pagination-@Model.Rendering.UniqueId',
                 cssClasses: {
                     @Model.Item.NameValuesToCssClasses("Css Classes")
                 },

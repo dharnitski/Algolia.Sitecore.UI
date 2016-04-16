@@ -1,0 +1,20 @@
+﻿---
+ID: "0e888763-fc77-42ea-ad26-efac1195571e"
+Parent: "b9c0bba1-e3f6-49ac-b3ff-e01f08206534"
+Template: "b9c0bba1-e3f6-49ac-b3ff-e01f08206534"
+Path: /sitecore/templates/Algolia/Datasources/Numeric Selector/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160416T111937
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: sitecore\admin
+    - ID: "c6ec2d0d-e169-439a-90f5-1c2f99b261de"
+      Hint: Operator
+      Value: "{1FADB9F3-782E-4DC0-B923-449AD095077D}"

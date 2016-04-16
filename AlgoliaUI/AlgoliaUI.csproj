@@ -155,6 +155,7 @@
     <Content Include="App_Config\Include\Algolia\Commands.config">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="Areas\Algolia\Views\NumericSelector.cshtml" />
     <None Include="Properties\PublishProfiles\sandbox.pubxml" />
   </ItemGroup>
   <ItemGroup>

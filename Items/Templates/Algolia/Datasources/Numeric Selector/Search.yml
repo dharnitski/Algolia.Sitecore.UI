@@ -1,0 +1,17 @@
+﻿---
+ID: "16cffae1-ae93-4e76-8523-8c27e75291a6"
+Parent: "b9c0bba1-e3f6-49ac-b3ff-e01f08206534"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Algolia/Datasources/Numeric Selector/Search
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160416T095709
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: sitecore\admin
