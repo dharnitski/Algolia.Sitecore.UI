@@ -13,7 +13,7 @@
             instantsearch.widgets.searchBox({
                 container: '#q-@Model.Rendering.UniqueId',
                 placeholder: '@Html.Sitecore().Field("Placeholder")',
-                autofocus: true
+                autofocus: @Model.Item.GetCheckBoxTrueFalse("Autofocus")
             })
         );
     </script>

@@ -57,6 +57,27 @@ namespace AlgoliaUI.Tests
             }
         }
 
+        [TestCase("1","true")]
+        [TestCase("0", "false")]
+        [TestCase("", "false")]
+        public void GetCheckBoxTrueFalseTest(string value, string expected)
+        {
+            using (var db = new Db
+            {
+                new DbItem("Home")
+                {
+                    {
+                        "Title",
+                        value
+                    }
+                }
+            })
+            {
+                var home = db.GetItem("/sitecore/content/home");
+                var actual = home.GetCheckBoxTrueFalse("Title");
+                expected.Should().Be(actual);
+            }
+        }
 
         [Test]
         public void ShouldParseIndeses()

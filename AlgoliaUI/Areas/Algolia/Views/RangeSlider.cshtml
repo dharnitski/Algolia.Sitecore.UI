@@ -1,0 +1,34 @@
+﻿@model AlgoliaUI.Code.Models.RefinementListModel
+
+@if (!Sitecore.Context.PageMode.IsPageEditorEditing)
+{
+    <div id="range-slider-@Model.Rendering.UniqueId" class="facet"></div>
+    <script>
+        search.addWidget(
+            instantsearch.widgets.rangeSlider({
+                container: '#range-slider-@Model.Rendering.UniqueId',
+                attributeName: '@Html.Sitecore().Field("Attribute Name")',
+                pips: @Model.Item.GetCheckBoxTrueFalse("Pips"),
+                tooltips: { format: function(formattedValue, rawValue) { return '$' + parseInt(formattedValue) } }
+            })
+        );
+    </script>
+}
+else
+{
+    <div class="form-group">
+        <label>Attribute Name:</label>
+        @Html.Sitecore().Field("Attribute Name")
+    </div>
+    <div class="form-group">
+        <label>Limit:</label>
+        @Html.Sitecore().Field("Limit")
+    </div>
+    <div class="form-group">
+        <label>Pips:</label>
+        @Html.Sitecore().Field("Pips", new { Display = "Checkbox" })
+    </div>
+}
+
+
+
