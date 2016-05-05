@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlgoliaUI", "AlgoliaUI.csproj", "{B056345D-A2B9-43AF-904A-7916B53F1AAD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlgoliaUI", "AlgoliaUI\AlgoliaUI.csproj", "{B056345D-A2B9-43AF-904A-7916B53F1AAD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlgoliaUI.Tests", "..\AlgoliaUI.Tests\AlgoliaUI.Tests.csproj", "{664A33A2-8D34-494F-B05A-6B76B781A0EC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlgoliaUI.Tests", "AlgoliaUI.Tests\AlgoliaUI.Tests.csproj", "{664A33A2-8D34-494F-B05A-6B76B781A0EC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

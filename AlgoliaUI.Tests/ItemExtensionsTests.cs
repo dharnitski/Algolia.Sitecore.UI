@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 using Sitecore.FakeDb;
 using AlgoliaUI.Code;
 using FluentAssertions;
@@ -14,7 +9,7 @@ namespace AlgoliaUI.Tests
     public class ItemExtensionsTests
     {
         [Test]
-        public void ShouldDecodeField()
+        public void ShouldDecodeField() 
         {
             using (var db = new Db
             {
