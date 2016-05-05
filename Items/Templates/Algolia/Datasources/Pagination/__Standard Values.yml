@@ -16,7 +16,7 @@ Languages:
       Hint: __Created by
       Value: sitecore\admin
     - ID: "e3486a70-4d10-4452-b909-142e3a256dab"
-      Hint: MaxPages
+      Hint: Max Pages
       Value: 100
     - ID: "e4ce969a-55d9-4893-a3e5-5bfe8951d585"
       Hint: Scroll To
