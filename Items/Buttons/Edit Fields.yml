@@ -10,7 +10,7 @@ SharedFields:
   Value: Control/32x32/checklist_h.png
 - ID: "1bb289d6-44d7-4fcc-af15-db32b841f957"
   Hint: Click
-  Value: "algoliacommands:EditFields(command={005FF3CE-0CB6-4694-9D9D-5E3C8A4BEED1},fields=Item Template,fieldTypes=Name Value List|Droplink)"
+  Value: "algoliacommands:EditFields(command={005FF3CE-0CB6-4694-9D9D-5E3C8A4BEED1},fields=Item Template,fieldTypes=Name Value List|Droplink|Algolia Template)"
 - ID: "e8cc41c7-c304-4282-b782-e21ca32d324c"
   Hint: Icon
   Value: Control/32x32/checklist_h.png

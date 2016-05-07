@@ -32,6 +32,8 @@ namespace AlgoliaUI.Code.Commands
             list.AddRange(GetFieldsByFieldNames(args, item));
             list.AddRange(GetFieldsByFieldTypes(args, item));
 
+            list = list.Distinct().ToList();
+
             return new PageEditFieldEditorOptions(form, list)
             {
                 Title = commandItem["Title"],

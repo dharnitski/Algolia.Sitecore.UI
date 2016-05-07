@@ -84,6 +84,13 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Web.Mvc, Version=5.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\Sitecore\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages">
+      <HintPath>..\Libs\Sitecore\System.Web.WebPages.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Xml" />
@@ -134,6 +141,9 @@
     </Content>
     <Content Include="Areas\Algolia\Views\NumericSelector.cshtml" />
     <Content Include="Areas\Algolia\Views\RangeSlider.cshtml" />
+    <Content Include="App_Config\Include\Algolia\FieldTypes.config">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="Properties\PublishProfiles\sandbox.pubxml" />
   </ItemGroup>
   <ItemGroup>
@@ -141,6 +151,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Code\Commands\EditFieldsCommand.cs" />
+    <Compile Include="Code\Controls\AlgoliaTemplate.cs" />
+    <Compile Include="Code\FieldTypes\AlgoliaTemplateField.cs" />
     <Compile Include="Code\ItemExtensions.cs" />
     <Compile Include="Code\Models\NumericSelectorModel.cs" />
     <Compile Include="Code\Models\RefinementListModel.cs" />

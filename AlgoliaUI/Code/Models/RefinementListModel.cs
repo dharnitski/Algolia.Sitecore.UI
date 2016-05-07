@@ -11,7 +11,7 @@ namespace AlgoliaUI.Code.Models
         {
             get
             {
-                return GetPropertyValue("item", "Item Template", GetFieldDecodedRawValue);
+                return GetPropertyValue("item", "Item Template", GetFieldValue);
             }
         }
 
@@ -29,7 +29,7 @@ namespace AlgoliaUI.Code.Models
         {
             get
             {
-                return GetPropertyValue("header", "Header Template", GetFieldDecodedRawValue);
+                return GetPropertyValue("header", "Header Template", GetFieldValue);
             }
         }
 
@@ -41,14 +41,12 @@ namespace AlgoliaUI.Code.Models
             return new HtmlString($"{jsFieldName}: {getFieldvalue(fieldName)},");
         }
 
-        private string GetFieldDecodedRawValue(string fieldName)
+        private string GetFieldValue(string fieldName)
         {
             var value = Item.Fields[fieldName].Value;
             if (string.IsNullOrWhiteSpace(value))
                 return null;
-            var decodedValue = HttpUtility.HtmlDecode(value);
-
-            return decodedValue;
+            return value;
         }
     }
 }

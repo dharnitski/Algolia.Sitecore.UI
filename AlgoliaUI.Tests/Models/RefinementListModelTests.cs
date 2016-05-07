@@ -11,7 +11,7 @@ namespace AlgoliaUI.Tests.Models
     public class RefinementListModelTests
     {
         [TestCase("", "")]
-        [TestCase(@"'&lt;div class=""facet - title""&gt;Materials&lt;/div class=""facet - title""&gt;'",
+        [TestCase("'<div class=\"facet - title\">Materials</div class=\"facet - title\">'",
             "header: '<div class=\"facet - title\">Materials</div class=\"facet - title\">',")]
         public void HeaderTemplateTest(string input, string expected)
         {
@@ -36,7 +36,7 @@ namespace AlgoliaUI.Tests.Models
         }
 
         [TestCase("", "")]
-        [TestCase(@"'&lt;div class=""facet - title""&gt;Materials&lt;/div class=""facet - title""&gt;'",
+        [TestCase("'<div class=\"facet - title\">Materials</div class=\"facet - title\">'",
             "item: '<div class=\"facet - title\">Materials</div class=\"facet - title\">',")]
         public void ItemTemplateTest(string input, string expected)
         {

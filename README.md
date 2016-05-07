@@ -20,7 +20,8 @@ Copy the following binaries from your Sitecore installation (`.\Website\bin`) in
 * sitecore.nexus.dll
 * Sitecore.Update.dll
 * Sitecore.Zip.dll
-
+* System.Web.Mvc.dll
+* System.Web.WebPages.dll
 
 # How to build
 
