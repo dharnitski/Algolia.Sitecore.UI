@@ -106,6 +106,7 @@
     <Compile Include="Models\NumericSelectorModelTests.cs" />
     <Compile Include="Models\RefinementListModelTests.cs" />
     <Compile Include="Models\SearchBoxModelTests.cs" />
+    <Compile Include="Models\SearchScriptModelTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

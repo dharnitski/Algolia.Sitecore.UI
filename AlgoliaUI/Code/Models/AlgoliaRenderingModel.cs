@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using Sitecore.Diagnostics;
 using Sitecore.Mvc.Presentation;
 
 namespace AlgoliaUI.Code.Models
@@ -43,6 +44,13 @@ namespace AlgoliaUI.Code.Models
 
         protected string GetFieldValue(string fieldName)
         {
+            var field = Item.Fields[fieldName];
+            if (field == null)
+            {
+                Log.Warn($"Cannot Find field '{fieldName}' in item {Item.Paths.FullPath}", this);
+                return null;
+            }
+
             var value = Item.Fields[fieldName].Value;
             if (string.IsNullOrWhiteSpace(value))
                 return null;

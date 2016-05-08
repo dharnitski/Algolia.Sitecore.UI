@@ -159,6 +159,7 @@
     <Compile Include="Code\Models\NumericSelectorModel.cs" />
     <Compile Include="Code\Models\RefinementListModel.cs" />
     <Compile Include="Code\Models\SearchBoxModel.cs" />
+    <Compile Include="Code\Models\SearchScriptModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <PropertyGroup>
