@@ -19,7 +19,6 @@ namespace AlgoliaUI.Code.Models
         {
             if (string.IsNullOrEmpty(Item[fieldName]))
                 return new HtmlString(string.Empty);
-
             return new HtmlString($"{jsFieldName}: {getFieldvalue(fieldName)},");
         }
 
@@ -55,6 +54,11 @@ namespace AlgoliaUI.Code.Models
             return Item.ReferenceKey(fieldName, defaultValue);
         }
 
-        
+        protected string GetCheckBoxTrueFalse(string fieldName)
+        {
+            return Item.GetCheckBoxTrueFalse(fieldName);
+        }
+
+
     }
 }

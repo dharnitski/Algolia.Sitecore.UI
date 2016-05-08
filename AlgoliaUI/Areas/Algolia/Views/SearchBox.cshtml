@@ -1,4 +1,4 @@
-﻿@model RenderingModel
+﻿@model AlgoliaUI.Code.Models.SearchBoxModel
 
 @if (!Sitecore.Context.PageMode.IsPageEditorEditing)
 {
@@ -12,8 +12,8 @@
         search.addWidget(
             instantsearch.widgets.searchBox({
                 container: '#q-@Model.Rendering.UniqueId',
-                placeholder: '@Html.Sitecore().Field("Placeholder")',
-                autofocus: @Model.Item.GetCheckBoxTrueFalse("Autofocus")
+                @Model.Placeholder
+                @Model.Autofocus
             })
         );
     </script>

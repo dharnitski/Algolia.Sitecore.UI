@@ -102,8 +102,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ItemExtensionsTests.cs" />
+    <Compile Include="Models\HitsModelTests.cs" />
     <Compile Include="Models\NumericSelectorModelTests.cs" />
     <Compile Include="Models\RefinementListModelTests.cs" />
+    <Compile Include="Models\SearchBoxModelTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

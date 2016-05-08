@@ -1,4 +1,4 @@
-﻿@model RenderingModel
+﻿@model AlgoliaUI.Code.Models.HitsModel
 
 @if (!Sitecore.Context.PageMode.IsPageEditorEditing)
 {
@@ -8,24 +8,16 @@
             instantsearch.widgets.hits({
                 container: '#hits-container-@Model.Rendering.UniqueId',
                 templates: {
-                    empty: @Model.Item.GetFieldDecodedRawValue("Empty Template"),
-                    item: @Model.Item.GetFieldDecodedRawValue("Item Template")
+                    @Model.EmptyTemplate
+                    @Model.ItemTemplate
                 },
-                hitsPerPage: @Html.Sitecore().Field("Hits Per Page")
+                @Model.HitsPerPage
             })
         );
     </script>
 }
 else
 {
-    <div class="form-group">
-        <label>Item Template:</label>
-        @Html.Sitecore().Field("Item Template")
-    </div>
-    <div class="form-group">
-        <label>Empty Template:</label>
-        @Html.Sitecore().Field("Empty Template")
-    </div>
     <div class="form-group">
         <label>Hits Per Page:</label>
         @Html.Sitecore().Field("Hits Per Page")
