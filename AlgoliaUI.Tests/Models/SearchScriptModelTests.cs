@@ -157,5 +157,30 @@ namespace AlgoliaUI.Tests.Models
                 actual.Should().Be("indexName: 'Id',");
             }
         }
+
+        [TestCase("1", true)]
+        [TestCase("0", false)]
+        [TestCase("", false)]
+        public void RenderResourcesTest(string value, bool expected)
+        {
+            using (var db = new Db
+            {
+                new DbItem("home")
+                {
+                    {"Render Resources", value}
+                }
+            })
+            {
+                var rendering = new Rendering
+                {
+                    Item = db.GetItem("/sitecore/content/home")
+                };
+
+                var sut = new SearchScriptModel { Rendering = rendering };
+
+                var actual = sut.RenderResources;
+                actual.Should().Be(expected);
+            }
+        }
     }
 }

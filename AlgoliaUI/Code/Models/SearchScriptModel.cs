@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Web;
 using Sitecore.Configuration;
+using Sitecore.Data.Items;
 
 namespace AlgoliaUI.Code.Models
 {
@@ -24,6 +25,8 @@ namespace AlgoliaUI.Code.Models
         public IHtmlString IndexName => GetPropertyStringValueWithFallback("indexName", "Index Name", GetFieldValueWithSettingsFallback);
 
         public IHtmlString SyncUrl => GetPropertyValue("syncUrl", "Sync Url", GetCheckBoxTrueFalse);
+
+        public bool RenderResources => bool.Parse(GetCheckBoxTrueFalse("Render Resources"));
 
         private IHtmlString GetPropertyStringValueWithFallback(string jsFieldName, string fieldName, Func<string, string> getFieldvalue)
         {

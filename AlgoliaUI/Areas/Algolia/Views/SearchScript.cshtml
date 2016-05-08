@@ -3,16 +3,19 @@
 
 @if (!Sitecore.Context.PageMode.IsPageEditorEditing)
 {
-    //todo: implement AMD
-    <script src="//cdn.jsdelivr.net/jquery/1.11.3/jquery.min.js"></script>
-    <script src="//cdn.jsdelivr.net/instantsearch.js/1/instantsearch.min.js"></script>
+    if (@Model.RenderResources)
+    {
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/instantsearch.js/1/instantsearch.min.css"/>
+        //todo: implement AMD
+        <script src="//cdn.jsdelivr.net/instantsearch.js/1/instantsearch.min.js"></script>
+    }
     <script>
-    var search = instantsearch({
-        @Model.ApplicationId
-        @Model.ApplicationKey
-        @Model.IndexName
-        @Model.UrlSync
-    });
+        var search = instantsearch({
+            @Model.ApplicationId
+            @Model.ApplicationKey
+            @Model.IndexName
+            @Model.UrlSync
+        });
     </script>
 }
 else
@@ -32,16 +35,22 @@ else
         </div>
     </fieldset>
     <fieldset>
-        <label>If not empty conguration loaded from Setting with pattern Algolia.ConfigName.XXX</label>
+        <label>If not empty, conguration is loaded from Setting with pattern Algolia.ConfigName.XXX</label>
         <div class="form-group">
             <label>Config Name:</label>
             @Html.Sitecore().Field("Config Name")
         </div>
     </fieldset>
-    <div class="form-group">
-        <label>Sync Url:</label>
-        @Html.Sitecore().Field("Sync Url", new { Display = "Checkbox" })
-    </div>
+    <fieldset>
+        <div class="form-group">
+            <label>Sync Url:</label>
+            @Html.Sitecore().Field("Sync Url", new {Display = "Checkbox"})
+        </div>
+        <div class="form-group">
+            <label>Sync Url:</label>
+            @Html.Sitecore().Field("Render Resources", new { Display = "Checkbox" })
+        </div>
+    </fieldset>
 }
 
 
