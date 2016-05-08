@@ -1,4 +1,4 @@
-﻿@model RenderingModel
+﻿@model ClearAllModel
 
 @if (!Sitecore.Context.PageMode.IsPageEditorEditing)
 {
@@ -8,22 +8,16 @@
             instantsearch.widgets.clearAll({
                 container: '#clear-all-@Model.Rendering.UniqueId',
                 templates: {
-                    link: @Model.Item.GetFieldDecodedRawValue("Link Template")
+                    @Model.LinkTemplate
                 },
-                cssClasses: {
-                    @Model.Item.NameValuesToCssClasses("Css Classes")
-                },
-                autoHideContainer: @Model.Item.GetCheckBoxTrueFalse("Auto Hide Container")
+                @Model.CssClasses
+                @Model.AutoHideContainer
             })
         );
     </script>
 }
 else
 {
-    <div class="form-group">
-        <label>Link Template:</label>
-        @Html.Sitecore().Field("Link Template")
-    </div>
     <div class="form-group">
         <label>Auto Hide Container:</label>
         @Html.Sitecore().Field("Auto Hide Container", new {Display = "Checkbox"})

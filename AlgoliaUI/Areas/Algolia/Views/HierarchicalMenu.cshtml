@@ -1,4 +1,4 @@
-﻿@model RenderingModel
+﻿@model HierarchicalMenuModel
 
 @if (!Sitecore.Context.PageMode.IsPageEditorEditing)
 {
@@ -19,14 +19,6 @@
 }
 else
 {
-    <div class="form-group">
-        <label>Header Template:</label>
-        @Html.Sitecore().Field("Header Template")
-    </div>
-    <div class="form-group">
-        <label>Item Template:</label>
-        @Html.Sitecore().Field("Item Template")
-    </div>
     <div class="form-group">
         <label>Sort By:</label>
         @Html.Sitecore().Field("Sort By")

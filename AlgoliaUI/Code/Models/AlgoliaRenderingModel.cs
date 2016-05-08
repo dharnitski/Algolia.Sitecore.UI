@@ -23,6 +23,13 @@ namespace AlgoliaUI.Code.Models
             return new HtmlString($"{jsFieldName}: {getFieldvalue(fieldName)},");
         }
 
+        protected IHtmlString GetObjectValue(string jsFieldName, string fieldName, Func<string, string> getFieldvalue)
+        {
+            if (string.IsNullOrEmpty(Item[fieldName]))
+                return new HtmlString(string.Empty);
+            return new HtmlString($"{jsFieldName}: {{{getFieldvalue(fieldName)}}},");
+        }
+
         /// <summary>
         /// makes sure that value is correct JS string. Could be 'value' or "value"
         /// </summary>
@@ -67,6 +74,12 @@ namespace AlgoliaUI.Code.Models
             return Item.GetCheckBoxTrueFalse(fieldName);
         }
 
+        protected string NameValuesToCssClasses(string fieldName)
+        {
+            return Item.NameValuesToCssClasses(fieldName).ToString();
+        }
 
+        public IHtmlString CssClasses
+            => GetObjectValue("cssClasses", "Css Classes", NameValuesToCssClasses);
     }
 }

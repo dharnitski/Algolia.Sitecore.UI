@@ -155,6 +155,8 @@
     <Compile Include="Code\FieldTypes\AlgoliaTemplateField.cs" />
     <Compile Include="Code\ItemExtensions.cs" />
     <Compile Include="Code\Models\AlgoliaRenderingModel.cs" />
+    <Compile Include="Code\Models\ClearAllModel.cs" />
+    <Compile Include="Code\Models\HierarchicalMenuModel.cs" />
     <Compile Include="Code\Models\HitsModel.cs" />
     <Compile Include="Code\Models\NumericSelectorModel.cs" />
     <Compile Include="Code\Models\RefinementListModel.cs" />

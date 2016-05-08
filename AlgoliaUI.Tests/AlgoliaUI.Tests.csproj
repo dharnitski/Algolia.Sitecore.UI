@@ -102,6 +102,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ItemExtensionsTests.cs" />
+    <Compile Include="Models\AlgoliaRenderingModelTests.cs" />
+    <Compile Include="Models\HierarchicalMenuTests.cs" />
     <Compile Include="Models\HitsModelTests.cs" />
     <Compile Include="Models\NumericSelectorModelTests.cs" />
     <Compile Include="Models\RefinementListModelTests.cs" />
