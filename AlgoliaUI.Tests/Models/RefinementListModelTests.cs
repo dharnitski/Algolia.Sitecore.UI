@@ -13,6 +13,7 @@ namespace AlgoliaUI.Tests.Models
         [TestCase("", "")]
         [TestCase("'<div class=\"facet - title\">Materials</div class=\"facet - title\">'",
             "header: '<div class=\"facet - title\">Materials</div class=\"facet - title\">',")]
+        [TestCase("template", "header: 'template',")]
         public void HeaderTemplateTest(string input, string expected)
         {
             using (var db = new Db
@@ -38,6 +39,7 @@ namespace AlgoliaUI.Tests.Models
         [TestCase("", "")]
         [TestCase("'<div class=\"facet - title\">Materials</div class=\"facet - title\">'",
             "item: '<div class=\"facet - title\">Materials</div class=\"facet - title\">',")]
+        [TestCase("template", "item: 'template',")]
         public void ItemTemplateTest(string input, string expected)
         {
             using (var db = new Db

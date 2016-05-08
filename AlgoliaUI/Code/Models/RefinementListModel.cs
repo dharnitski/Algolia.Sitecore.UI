@@ -11,7 +11,7 @@ namespace AlgoliaUI.Code.Models
         {
             get
             {
-                return GetPropertyValue("item", "Item Template", GetFieldValue);
+                return GetPropertyValue("item", "Item Template", GetStringFieldValue);
             }
         }
 
@@ -29,16 +29,43 @@ namespace AlgoliaUI.Code.Models
         {
             get
             {
-                return GetPropertyValue("header", "Header Template", GetFieldValue);
+                return GetPropertyValue("header", "Header Template", GetStringFieldValue);
             }
         }
 
+        /// <summary>
+        /// renders JS property in format: name: fieldValue, 
+        /// </summary>
+        /// <param name="jsFieldName"></param>
+        /// <param name="fieldName"></param>
+        /// <param name="getFieldvalue"></param>
+        /// <returns></returns>
         private IHtmlString GetPropertyValue(string jsFieldName, string fieldName, Func<string, string> getFieldvalue)
         {
             if (string.IsNullOrEmpty(Item[fieldName]))
                 return new HtmlString(string.Empty);
 
             return new HtmlString($"{jsFieldName}: {getFieldvalue(fieldName)},");
+        }
+
+
+        /// <summary>
+        /// makes sure that value is correct JS string. Could be 'value' or "value"
+        /// </summary>
+        /// <param name="fieldName"></param>
+        /// <returns></returns>
+        private string GetStringFieldValue(string fieldName)
+        {
+            var value = GetFieldValue(fieldName);
+            if (value == null)
+                return null;
+
+            if (value.StartsWith(@"""") || value.StartsWith("'"))
+                return value;
+
+            value = $"'{value}'";
+
+            return value;
         }
 
         private string GetFieldValue(string fieldName)
