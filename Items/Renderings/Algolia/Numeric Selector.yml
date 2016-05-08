@@ -18,6 +18,9 @@ SharedFields:
 - ID: "b5b27af1-25ef-405c-87ce-369b3a004016"
   Hint: Datasource Location
   Value: ./Content/Algolia/
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: "<image mediaid=\"{24E01AAF-F609-4B0C-ACDC-A97B72C4C944}\" />"
 - ID: "ddab263e-b42e-419a-aa6f-081b7393ca38"
   Hint: Model
   Value: /sitecore/layout/Models/Algolia/Numeric Selector
@@ -28,4 +31,4 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20160416T110553
+      Value: 20160416T150553Z

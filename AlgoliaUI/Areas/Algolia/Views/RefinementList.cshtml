@@ -9,7 +9,7 @@
                 container: '#refinement-list-@Model.Rendering.UniqueId',
                 attributeName: '@Html.Sitecore().Field("Attribute Name")',
                 operator: '@Model.Operator',
-                limit: @Html.Sitecore().Field("Limit"),
+                @Model.Limit
                 templates: {
                     @Model.HeaderTemplate
                     @Model.ItemTemplate
