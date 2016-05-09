@@ -21,6 +21,9 @@ SharedFields:
 - ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
   Hint: __Thumbnail
   Value: "<image mediaid=\"{B7353180-5470-4E71-844D-4B3A5BA430FE}\" />"
+- ID: "ddab263e-b42e-419a-aa6f-081b7393ca38"
+  Hint: Model
+  Value: /sitecore/layout/Models/Algolia/Star Rating Model
 Languages:
 - Language: en
   Versions:

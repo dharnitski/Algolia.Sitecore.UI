@@ -158,10 +158,13 @@
     <Compile Include="Code\Models\ClearAllModel.cs" />
     <Compile Include="Code\Models\HierarchicalMenuModel.cs" />
     <Compile Include="Code\Models\HitsModel.cs" />
+    <Compile Include="Code\Models\MenuModel.cs" />
     <Compile Include="Code\Models\NumericSelectorModel.cs" />
+    <Compile Include="Code\Models\PriceRangesModel.cs" />
     <Compile Include="Code\Models\RefinementListModel.cs" />
     <Compile Include="Code\Models\SearchBoxModel.cs" />
     <Compile Include="Code\Models\SearchScriptModel.cs" />
+    <Compile Include="Code\Models\StarRatingModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <PropertyGroup>

@@ -23,6 +23,13 @@ namespace AlgoliaUI.Code.Models
             return new HtmlString($"{jsFieldName}: {getFieldvalue(fieldName)},");
         }
 
+        protected IHtmlString GetArrayValue(string jsFieldName, string fieldName, Func<string, string> getFieldvalue)
+        {
+            if (string.IsNullOrEmpty(Item[fieldName]))
+                return new HtmlString(string.Empty);
+            return new HtmlString($"{jsFieldName}: [{getFieldvalue(fieldName)}],");
+        }
+
         protected IHtmlString GetObjectValue(string jsFieldName, string fieldName, Func<string, string> getFieldvalue)
         {
             if (string.IsNullOrEmpty(Item[fieldName]))

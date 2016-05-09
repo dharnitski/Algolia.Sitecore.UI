@@ -8,10 +8,10 @@
             instantsearch.widgets.hierarchicalMenu({
                 container: '#hierarchical-categories-@Model.Rendering.UniqueId',
                 attributes: [@Model.Item.NameValuesToAttributes("Attributes")],
-                sortBy: ['@Html.Sitecore().Field("Sort By")'],
+                @Model.SortBy
                 templates: {
-                    item: @Model.Item.GetFieldDecodedRawValue("Item Template"),
-                    header: @Model.Item.GetFieldDecodedRawValue("Header Template")
+                    @Model.ItemTemplate
+                    @Model.HeaderTemplate
                 }
             })
         );
