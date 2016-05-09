@@ -347,13 +347,6 @@
       <Name>Dll and Pdb</Name>
     </xfiles>
     <files>
-      <Root>/Areas/Algolia</Root>
-      <Converter>
-        <FileToEntryConverter>
-          <Root>/</Root>
-          <Transforms />
-        </FileToEntryConverter>
-      </Converter>
       <Include>
         <FileNameFilter>
           <Pattern />
@@ -374,6 +367,22 @@
       </Include>
       <Exclude />
       <Name>Views</Name>
+      <Root>/Areas/Algolia</Root>
+      <Converter>
+        <FileToEntryConverter>
+          <Root>/</Root>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </FileToEntryConverter>
+      </Converter>
     </files>
     <items>
       <Database>core</Database>
@@ -381,7 +390,16 @@
       <SkipVersions>False</SkipVersions>
       <Converter>
         <ItemToEntryConverter>
-          <Transforms />
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
         </ItemToEntryConverter>
       </Converter>
       <Include>
@@ -423,6 +441,35 @@
       <Exclude />
       <Name>Field Types</Name>
     </items>
+    <files>
+      <Include>
+        <FileNameFilter>
+          <Pattern />
+          <AcceptDirectories>False</AcceptDirectories>
+        </FileNameFilter>
+        <FileDateFilter>
+          <FilterType>CreatedFilter</FilterType>
+          <ActionDateTo />
+          <ActionDateFrom />
+          <NotOlderThan />
+        </FileDateFilter>
+        <FileDateFilter>
+          <FilterType>ModifiedFilter</FilterType>
+          <ActionDateTo />
+          <ActionDateFrom />
+          <NotOlderThan />
+        </FileDateFilter>
+      </Include>
+      <Exclude />
+      <Name>Configuration</Name>
+      <Root>/App_Config/Include/Algolia</Root>
+      <Converter>
+        <FileToEntryConverter>
+          <Root>/</Root>
+          <Transforms />
+        </FileToEntryConverter>
+      </Converter>
+    </files>
   </Sources>
   <Converter>
     <TrivialConverter>
