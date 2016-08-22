@@ -28,6 +28,8 @@ namespace AlgoliaUI.Code.Models
 
         public bool RenderResources => bool.Parse(GetCheckBoxTrueFalse("Render Resources"));
 
+        public IHtmlString SearchFunction => GetPropertyValue("searchFunction", "Search Function", GetFieldValue);
+
         private IHtmlString GetPropertyStringValueWithFallback(string jsFieldName, string fieldName, Func<string, string> getFieldvalue)
         {
             return new HtmlString($"{jsFieldName}: {getFieldvalue(fieldName)},");

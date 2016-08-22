@@ -30,7 +30,7 @@ namespace AlgoliaUI.Tests.Models
                     Item = db.GetItem("/sitecore/content/home")
                 };
 
-                var sut = new SearchScriptModel { Rendering = rendering };
+                var sut = new SearchScriptModel {Rendering = rendering};
 
                 var actual = HttpUtility.HtmlEncode(sut.ApplicationId);
                 actual.Should().Be("appId: 'id',");
@@ -55,7 +55,7 @@ namespace AlgoliaUI.Tests.Models
 
                 db.Configuration.Settings["Algolia.MyTenant.Application Id"] = "Id";
 
-                var sut = new SearchScriptModel { Rendering = rendering };
+                var sut = new SearchScriptModel {Rendering = rendering};
 
                 var actual = HttpUtility.HtmlEncode(sut.ApplicationId);
                 actual.Should().Be("appId: 'Id',");
@@ -78,7 +78,7 @@ namespace AlgoliaUI.Tests.Models
                     Item = db.GetItem("/sitecore/content/home")
                 };
 
-                var sut = new SearchScriptModel { Rendering = rendering };
+                var sut = new SearchScriptModel {Rendering = rendering};
 
                 var actual = HttpUtility.HtmlEncode(sut.ApplicationKey);
                 actual.Should().Be("apiKey: 'id',");
@@ -103,7 +103,7 @@ namespace AlgoliaUI.Tests.Models
 
                 db.Configuration.Settings["Algolia.MyTenant.Application Read Only Key"] = "Id";
 
-                var sut = new SearchScriptModel { Rendering = rendering };
+                var sut = new SearchScriptModel {Rendering = rendering};
 
                 var actual = HttpUtility.HtmlEncode(sut.ApplicationKey);
                 actual.Should().Be("apiKey: 'Id',");
@@ -126,7 +126,7 @@ namespace AlgoliaUI.Tests.Models
                     Item = db.GetItem("/sitecore/content/home")
                 };
 
-                var sut = new SearchScriptModel { Rendering = rendering };
+                var sut = new SearchScriptModel {Rendering = rendering};
 
                 var actual = HttpUtility.HtmlEncode(sut.IndexName);
                 actual.Should().Be("indexName: 'id',");
@@ -151,7 +151,7 @@ namespace AlgoliaUI.Tests.Models
 
                 db.Configuration.Settings["Algolia.MyTenant.Index Name"] = "Id";
 
-                var sut = new SearchScriptModel { Rendering = rendering };
+                var sut = new SearchScriptModel {Rendering = rendering};
 
                 var actual = HttpUtility.HtmlEncode(sut.IndexName);
                 actual.Should().Be("indexName: 'Id',");
@@ -176,9 +176,34 @@ namespace AlgoliaUI.Tests.Models
                     Item = db.GetItem("/sitecore/content/home")
                 };
 
-                var sut = new SearchScriptModel { Rendering = rendering };
+                var sut = new SearchScriptModel {Rendering = rendering};
 
                 var actual = sut.RenderResources;
+                actual.Should().Be(expected);
+            }
+        }
+
+        [TestCase("function(helper) {some script}", "searchFunction: function(helper) {some script},")]
+        [TestCase("", "")]
+        [TestCase(" ", "")]
+        public void RenderSearchFunctionTest(string value, string expected)
+        {
+            using (var db = new Db
+            {
+                new DbItem("home")
+                {
+                    {"Search Function", value}
+                }
+            })
+            {
+                var rendering = new Rendering
+                {
+                    Item = db.GetItem("/sitecore/content/home")
+                };
+
+                var sut = new SearchScriptModel {Rendering = rendering};
+
+                var actual = HttpUtility.HtmlEncode(sut.SearchFunction);
                 actual.Should().Be(expected);
             }
         }
