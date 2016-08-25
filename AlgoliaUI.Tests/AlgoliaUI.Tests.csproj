@@ -109,6 +109,7 @@
     <Compile Include="Models\RefinementListModelTests.cs" />
     <Compile Include="Models\SearchBoxModelTests.cs" />
     <Compile Include="Models\SearchScriptModelTests.cs" />
+    <Compile Include="Models\ToggleModelTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -1,0 +1,20 @@
+﻿---
+ID: "8a698f94-fd46-4e04-8852-200df3fced4e"
+Parent: "4410ea74-8e54-4170-bfea-4b23dddcfb36"
+Template: "4410ea74-8e54-4170-bfea-4b23dddcfb36"
+Path: /sitecore/templates/Algolia/Datasources/Toggle/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160825T023141Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: sitecore\admin
+    - ID: "afd52b9f-f862-49f6-aea2-fbfc9472ab94"
+      Hint: Values
+      Value: on=true&off=false

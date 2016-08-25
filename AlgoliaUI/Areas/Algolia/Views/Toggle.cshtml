@@ -1,0 +1,34 @@
+﻿@model AlgoliaUI.Code.Models.ToggleModel
+
+@if (!Sitecore.Context.PageMode.IsPageEditorEditing)
+{
+    <main id="toggle-container-@Model.Rendering.UniqueId"></main>
+    <script>
+        search.addWidget(
+            instantsearch.widgets.toggle({
+                container: '#toggle-container-@Model.Rendering.UniqueId',
+                @Model.AttributeName
+                @Model.Label
+                @Model.CssClasses
+                @Model.Values
+                templates: {
+                    @Model.HeaderTemplate
+                }
+            })
+        );
+    </script>
+}
+else
+{
+    <div class="form-group">
+        <label>Attribute Name:</label>
+        @Html.Sitecore().Field("Attribute Name")
+    </div>
+    <div class="form-group">
+        <label>Label:</label>
+        @Html.Sitecore().Field("Label")
+    </div>
+}
+
+
+

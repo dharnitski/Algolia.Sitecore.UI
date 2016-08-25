@@ -144,6 +144,7 @@
     <Content Include="App_Config\Include\Algolia\FieldTypes.config">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="Areas\Algolia\Views\Toggle.cshtml" />
     <None Include="Properties\PublishProfiles\sandbox.pubxml" />
   </ItemGroup>
   <ItemGroup>
@@ -165,6 +166,7 @@
     <Compile Include="Code\Models\SearchBoxModel.cs" />
     <Compile Include="Code\Models\SearchScriptModel.cs" />
     <Compile Include="Code\Models\StarRatingModel.cs" />
+    <Compile Include="Code\Models\ToggleModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <PropertyGroup>

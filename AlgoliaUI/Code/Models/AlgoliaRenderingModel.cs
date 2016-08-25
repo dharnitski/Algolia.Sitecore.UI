@@ -18,7 +18,7 @@ namespace AlgoliaUI.Code.Models
         /// <returns></returns>
         protected IHtmlString GetPropertyValue(string jsFieldName, string fieldName, Func<string, string> getFieldvalue)
         {
-            if (string.IsNullOrEmpty(Item[fieldName]))
+            if (string.IsNullOrWhiteSpace(Item[fieldName]))
                 return new HtmlString(string.Empty);
             return new HtmlString($"{jsFieldName}: {getFieldvalue(fieldName)},");
         }
@@ -32,7 +32,7 @@ namespace AlgoliaUI.Code.Models
 
         protected IHtmlString GetObjectValue(string jsFieldName, string fieldName, Func<string, string> getFieldvalue)
         {
-            if (string.IsNullOrEmpty(Item[fieldName]))
+            if (string.IsNullOrWhiteSpace(Item[fieldName]))
                 return new HtmlString(string.Empty);
             return new HtmlString($"{jsFieldName}: {{{getFieldvalue(fieldName)}}},");
         }
