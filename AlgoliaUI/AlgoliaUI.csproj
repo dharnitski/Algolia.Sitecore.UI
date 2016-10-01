@@ -146,6 +146,8 @@
     <Content Include="App_Config\Include\Unicorn\Unicorn.Configs.Default.example" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.config" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.AutoPublish.config" />
+    <Content Include="Areas\TestAlgolia\Views\Ecommerce.cshtml" />
+    <Content Include="Areas\TestAlgolia\Views\Web.config" />
     <None Include="Properties\PublishProfiles\sandbox.pubxml" />
   </ItemGroup>
   <ItemGroup>

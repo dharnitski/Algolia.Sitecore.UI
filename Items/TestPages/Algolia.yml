@@ -1,0 +1,14 @@
+﻿---
+ID: "c2947bd6-633d-4e28-8756-2e337e0c1521"
+Parent: "110d559f-dea5-42ea-9c1c-8a5df7e70ef9"
+Template: "e1eff4ed-b8ed-4baa-9b2a-eacc3fa081bd"
+Path: /sitecore/content/Home/Algolia
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161001T195839Z
