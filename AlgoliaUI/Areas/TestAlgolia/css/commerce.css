@@ -58,8 +58,53 @@ header {
       border: 0;
       background: #FFBE61; }
 
-
-.facet-color {
+aside {
+  position: fixed;
+  overflow-y: auto;
+  top: 60px;
+  left: 0;
+  bottom: 0;
+  width: 230px;
+  padding: 20px;
+  border-right: 1px solid #EEE;
+  background: #FFFFFF; }
+  aside .facet-category-title {
+    font-size: 1.2em;
+    color: #888;
+    margin: 0 0 8px; }
+  aside .facet-wrapper {
+    padding-bottom: 12px;
+    border-bottom: solid 1px #EEE;
+    margin-bottom: 12px;
+    font-size: .87em; }
+  aside .facet {
+    margin-bottom: 16px; }
+  aside .facet-title {
+    font-weight: bold;
+    margin: 4px 0; }
+  aside .facet-item, aside a {
+    color: #000000; }
+    aside .facet-item:hover, aside a:hover {
+      color: #B32500;
+      text-decoration: none; }
+    aside .facet-item.active, aside a.active {
+      font-weight: bold; }
+    aside .facet-item input, aside a input {
+      margin-right: 4px; }
+  aside .facet-name {
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: inline-block; }
+  aside .facet-count {
+    margin-left: 4px;
+    color: #888; }
+  aside #colors:after {
+    content: "";
+    display: table;
+    clear: both; }
+  aside .facet-color {
     width: 28px;
     height: 28px;
     border-radius: 3px;
@@ -67,122 +112,85 @@ header {
     display: block;
     overflow: hidden;
     float: left; }
-    .facet-color.checked {
+    aside .facet-color.checked {
       box-shadow: inset 0 0 0 4px rgba(255, 255, 255, 0.5); }
-    .facet-color[data-facet-value="White"] {
+    aside .facet-color[data-facet-value="White"] {
       background-color: #FFFFFF;
       box-shadow: inset 0 0 0 1px #CCC; }
-      .facet-color[data-facet-value="White"].checked {
+      aside .facet-color[data-facet-value="White"].checked {
         box-shadow: inset 0 0 0 4px rgba(0, 0, 0, 0.1); }
-    .facet-color[data-facet-value="Black"] {
+    aside .facet-color[data-facet-value="Black"] {
       background-color: #000000; }
-    .facet-color[data-facet-value="Black-brown"] {
+    aside .facet-color[data-facet-value="Black-brown"] {
       background-color: #382919; }
-    .facet-color[data-facet-value="Pink"] {
+    aside .facet-color[data-facet-value="Pink"] {
       background-color: #C0116D; }
-    .facet-color[data-facet-value="Gray"] {
+    aside .facet-color[data-facet-value="Gray"] {
       background-color: #6F6E6C; }
-    .facet-color[data-facet-value="Blue"] {
+    aside .facet-color[data-facet-value="Blue"] {
       background-color: #5182A1; }
-    .facet-color[data-facet-value="Green"] {
+    aside .facet-color[data-facet-value="Green"] {
       background-color: #1E9C5E; }
-    .facet-color[data-facet-value="Brown"] {
+    aside .facet-color[data-facet-value="Brown"] {
       background-color: #7B6A63; }
-    .facet-color[data-facet-value="Red"] {
+    aside .facet-color[data-facet-value="Red"] {
       background-color: #BC1C1A; }
-    .facet-color[data-facet-value="Dark gray"] {
+    aside .facet-color[data-facet-value="Dark gray"] {
       background-color: #444348; }
-    .facet-color[data-facet-value="Silver color"] {
+    aside .facet-color[data-facet-value="Silver color"] {
       background-color: #AAAAA8; }
-    .facet-color[data-facet-value="Light brown"] {
+    aside .facet-color[data-facet-value="Light brown"] {
       background-color: #C19A6E; }
-    .facet-color[data-facet-value="Black-brown stain"] {
+    aside .facet-color[data-facet-value="Black-brown stain"] {
       background-color: #4B4640; }
-    .facet-color[data-facet-value="Off-white"] {
+    aside .facet-color[data-facet-value="Off-white"] {
       background-color: #D0C8B4; }
-    .facet-color[data-facet-value="Beige"] {
+    aside .facet-color[data-facet-value="Beige"] {
       background-color: #C9B8A3; }
-    .facet-color[data-facet-value="Light green"] {
+    aside .facet-color[data-facet-value="Light green"] {
       background-color: #ABBD9B; }
-    .facet-color[data-facet-value="White stain"] {
+    aside .facet-color[data-facet-value="White stain"] {
       background-color: #E4E1DC; }
-    .facet-color[data-facet-value="Turquoise"] {
+    aside .facet-color[data-facet-value="Turquoise"] {
       background-color: #46BCC9; }
-    .facet-color[data-facet-value="Birch effect"] {
+    aside .facet-color[data-facet-value="Birch effect"] {
       background-color: #CBBFA4; }
-    .facet-color[data-facet-value="Yellow"] {
+    aside .facet-color[data-facet-value="Yellow"] {
       background-color: #F5E500; }
-    .facet-color[data-facet-value="Dark blue"] {
+    aside .facet-color[data-facet-value="Dark blue"] {
       background-color: #374063; }
-    .facet-color[data-facet-value="Galvanized"] {
+    aside .facet-color[data-facet-value="Galvanized"] {
       background-color: #726F6A; }
-    .facet-color[data-facet-value="Birch"] {
+    aside .facet-color[data-facet-value="Birch"] {
       background-color: #726F6A; }
-    .facet-color[data-facet-value="Dark brown"] {
+    aside .facet-color[data-facet-value="Dark brown"] {
       background-color: #74523E; }
-    .facet-color[data-facet-value="High gloss gray"] {
+    aside .facet-color[data-facet-value="High gloss gray"] {
       background-color: #E5E5E5; }
-    .facet-color[data-facet-value="Gray/white"] {
+    aside .facet-color[data-facet-value="Gray/white"] {
       background-color: #E5E5E5; }
-    .facet-color[data-facet-value="Red/white"] {
+    aside .facet-color[data-facet-value="Red/white"] {
       background-color: #FA757B; }
-    .facet-color[data-facet-value="Clear"] {
+    aside .facet-color[data-facet-value="Clear"] {
       background-color: #D5DAE0; }
-    .facet-color[data-facet-value="Matte black"] {
+    aside .facet-color[data-facet-value="Matte black"] {
       background-color: #616872; }
-    .facet-color[data-facet-value="Matte white"] {
+    aside .facet-color[data-facet-value="Matte white"] {
       background-color: #DCDBD7; }
-    .facet-color[data-facet-value="White stained oak effect"] {
+    aside .facet-color[data-facet-value="White stained oak effect"] {
       background-color: #E7E8E0; }
-  
-  .facet-category-title {
-    font-size: 1.2em;
-    color: #888;
-    margin: 0 0 8px; }
-  .facet-wrapper {
-    padding-bottom: 12px;
-    border-bottom: solid 1px #EEE;
-    margin-bottom: 12px;
-    font-size: .87em; }
-  .facet {
-    margin-bottom: 16px; }
-  .facet-title {
-    font-weight: bold;
-    margin: 4px 0; }
-  .facet-item, a {
-    color: #000000; }
-    .facet-item:hover, a:hover {
-      color: #B32500;
-      text-decoration: none; }
-    .facet-item.active, a.active {
-      font-weight: bold; }
-    .facet-item input, a input {
-      margin-right: 4px; }
-  .facet-name {
-    width: 100%;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    display: inline-block; }
-  .facet-count {
-    margin-left: 4px;
-    color: #888; }
-  #colors:after {
-    content: "";
-    display: table;
-    clear: both; }
-  .ais-price-ranges--form {
+  aside .ais-price-ranges--form {
     margin-top: 8px; }
-  .ais-price-ranges--currency {
+  aside .ais-price-ranges--currency {
     display: inline-block;
     margin-right: 4px; }
-  .ais-price-ranges--input {
+  aside .ais-price-ranges--input {
     display: inline-block;
     width: 50px;
     border-radius: 2px;
     border: solid 1px #888;
     font-weight: normal; }
-  .ais-price-ranges--button {
+  aside .ais-price-ranges--button {
     display: block;
     float: right;
     width: 22px;
@@ -195,14 +203,12 @@ header {
     border-radius: 50%;
     text-align: center;
     background-color: #EEE; }
-    .ais-price-ranges--button:hover {
+    aside .ais-price-ranges--button:hover {
       color: #0063C3;
       background-color: #FFFFFF; }
-    .ais-price-ranges--button:focus {
+    aside .ais-price-ranges--button:focus {
       outline: none;
       box-shadow: inset 0 0 0 1px #FFBE61; }
-
-
 
 .results-wrapper {
   padding: 70px 10px 10px 240px; }

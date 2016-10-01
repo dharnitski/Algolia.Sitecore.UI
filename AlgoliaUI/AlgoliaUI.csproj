@@ -102,9 +102,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="css\samples\commerce.css" />
-    <Content Include="css\samples\media.css" />
-    <Content Include="css\samples\tourism.css" />
+    <Content Include="Areas\TestAlgolia\css\commerce.css" />
+    <Content Include="Areas\TestAlgolia\css\media.css" />
+    <Content Include="Areas\TestAlgolia\css\tourism.css" />
+    <Content Include="Areas\TestAlgolia\scripts\commerce.js" />
     <Content Include="packages.config">
       <SubType>Designer</SubType>
     </Content>
@@ -172,6 +173,7 @@
     <Compile Include="Code\Models\ToggleModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
