@@ -1,15 +1,6 @@
 *BuiltFiles_*.txt
 *CopiedFiles_*.txt
 *DeployedFiles_*.txt
-*.TDS.*/Package_*
-*.TDS.*/QA-*/
-*.TDS.*/INT-*/
-*.TDS.*/Debug/
-*.TDS.*/Release/
-*.TDS.*/PROD*/
-*.TDS.*/Sandbox/
-*.TDS.*/CI/
-*.TDS.*/IconCache/
 /sandbox/*
 *.user
 *.suo
@@ -23,5 +14,4 @@ license.xml
 /*.Web/Areas/*/css/*.map
 .vs/
 Libs/Sitecore/
-sandbox2/
 

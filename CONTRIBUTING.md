@@ -8,7 +8,9 @@
 
 1. Create `sandbox` subfolder in repository root.
 1. Install Sitecore 8.0+ version in folder you just created. Use any name for site, for example `algoliaui`.
+1. Copy sitecore license file into `AlgoliaUI.Tests` to enable Sitecore.FakeBD tests. 
 1. Open solution file in Visual Studio. Publish `AlgoliaUI` project using `sandbox` profile.
+1. Open http://algoliaui/unicorn.aspx link and Sync `Default Configuration`
 
 
 ## Troubleshooting
