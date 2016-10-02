@@ -1,17 +1,20 @@
 ﻿---
-ID: "e1eff4ed-b8ed-4baa-9b2a-eacc3fa081bd"
+ID: "e3ef10ad-20bd-4bd9-853a-8901588333e3"
 Parent: "d222de22-e31d-4baf-9148-25b519584646"
 Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
-Path: /sitecore/templates/TestAlgolia/TestPage
+Path: /sitecore/templates/TestAlgolia/Page Content
 DB: master
 SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: applications/16x16/folder.png
 - ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
   Hint: __Base template
   Type: tree list
   Value: "{1930BBEB-7805-471A-A3BE-4858AC7CF696}"
 - ID: "f7d48a55-2158-4f02-9356-756654404f73"
   Hint: __Standard values
-  Value: "{3A4E25F7-CDE6-4D42-B671-E422BE2CD177}"
+  Value: "{069B7F2B-4E05-42A5-8DC7-D99001FE2EAC}"
 Languages:
 - Language: en
   Versions:
@@ -19,7 +22,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20161001T195703Z
+      Value: 20161002T003147Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: sitecore\admin

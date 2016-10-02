@@ -2,13 +2,15 @@
 ID: "3a4e25f7-cde6-4d42-b671-e422be2cd177"
 Parent: "e1eff4ed-b8ed-4baa-9b2a-eacc3fa081bd"
 Template: "e1eff4ed-b8ed-4baa-9b2a-eacc3fa081bd"
-Path: /sitecore/templates/TestAlgolia/TestPage/__Standard Values
+Path: /sitecore/templates/TestAlgolia/Test Page/__Standard Values
 DB: master
 SharedFields:
 - ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
   Hint: __Masters
   Type: TreelistEx
-  Value: "{E1EFF4ED-B8ED-4BAA-9B2A-EACC3FA081BD}"
+  Value: |
+    {E1EFF4ED-B8ED-4BAA-9B2A-EACC3FA081BD}
+    {E3EF10AD-20BD-4BD9-853A-8901588333E3}
 Languages:
 - Language: en
   Versions:

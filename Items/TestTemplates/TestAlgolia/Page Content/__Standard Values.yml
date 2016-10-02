@@ -1,0 +1,39 @@
+﻿---
+ID: "069b7f2b-4e05-42a5-8dc7-d99001fe2eac"
+Parent: "e3ef10ad-20bd-4bd9-853a-8901588333e3"
+Template: "e3ef10ad-20bd-4bd9-853a-8901588333e3"
+Path: /sitecore/templates/TestAlgolia/Page Content/__Standard Values
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Applications/16x16/folder.png
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: |
+    {02EA8C7C-E498-4E40-8DBF-058D001B3D5A}
+    {4B429C54-1964-41E4-BAAB-8D827A1A4332}
+    {446B05EE-9442-455A-9684-038BE070A2AD}
+    {520953EF-81A7-4993-99CE-54D41C459F6B}
+    {A51943B0-530E-4AAF-8609-901D5D0AD3D2}
+    {B9C0BBA1-E3F6-49AC-B3FF-E01F08206534}
+    {1488FD93-53A9-42CA-AFB4-5A2BB52CAE29}
+    {908F15BD-46C4-45FD-84F7-87E95256B4C0}
+    {D7138C70-F79E-4F4A-A7C6-B1872670BE48}
+    {C5171DCE-CB00-4770-8A3A-B6CDA88D300D}
+    {D0FCEC50-D82F-498D-8637-96011420B217}
+    {41E26ED7-A8D8-4ECA-992F-A4CDCE05F15D}
+    {6D691373-4A08-476C-B7F7-612E01194CD9}
+    {4410EA74-8E54-4170-BFEA-4B23DDDCFB36}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161002T003201Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: sitecore\admin

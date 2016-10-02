@@ -19,6 +19,22 @@ Languages:
   Versions:
   - Version: 1
     Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{A5670C4C-58B4-4711-9869-664CBFA3D145}"
+              s:ds="{88592A00-6F83-4B09-8AC1-23E059068CFB}"
+              s:id="{307562D7-5621-48A1-8194-A2F123E8D464}"
+              s:par=""
+              s:ph="header" />
+          </d>
+        </r>
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20161001T195848Z

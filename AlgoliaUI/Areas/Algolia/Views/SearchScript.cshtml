@@ -1,15 +1,14 @@
 ﻿@model SearchScriptModel
 
 
-@if (!Sitecore.Context.PageMode.IsPageEditorEditing)
+@if (!Sitecore.Context.PageMode.IsExperienceEditorEditing)
 {
     if (@Model.RenderResources)
     {
         <link rel="stylesheet" href="//cdn.jsdelivr.net/instantsearch.js/1/instantsearch.min.css"/>
-        //todo: implement AMD
         <script src="//cdn.jsdelivr.net/instantsearch.js/1/instantsearch.min.js"></script>
     }
-    <script>
+    <script> 
         var search = instantsearch({
             @Model.ApplicationId
             @Model.ApplicationKey

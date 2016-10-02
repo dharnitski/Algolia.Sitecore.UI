@@ -1,0 +1,14 @@
+﻿---
+ID: "5376c3d9-c559-4fd9-a073-57b560d9a494"
+Parent: "2b27587e-06bf-4f44-9c67-07928af717f4"
+Template: "e3ef10ad-20bd-4bd9-853a-8901588333e3"
+Path: /sitecore/content/Home/Algolia/Ecommerce/Page Content
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161002T003329Z
