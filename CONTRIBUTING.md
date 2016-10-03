@@ -1,4 +1,4 @@
-# How to setup local environmnt
+# How to setup local environment
 
 ## Prerequisites
 
@@ -8,7 +8,7 @@
 
 1. Create `sandbox` subfolder in repository root.
 1. Install Sitecore 8.0+ version in folder you just created. Use any name for site, for example `algoliaui`.
-1. Copy sitecore license file into `AlgoliaUI.Tests` to enable Sitecore.FakeBD tests. 
+1. Copy Sitecore license file into `AlgoliaUI.Tests` to enable Sitecore.FakeBD tests. 
 1. Open solution file in Visual Studio. Publish `AlgoliaUI` project using `sandbox` profile.
 1. Open http://algoliaui/unicorn.aspx link and Sync `Default Configuration`
 
@@ -17,8 +17,8 @@
 
 ### Wrong DLL versions copied to sandbox
 
-Solution is tightly coupled to Sitecore 8.2 Initial release through installed nuget packages. That should be fine for generated package and sandbox development because sitecore DLLs should not be included.
-To achive that `Copy Local` property is set to `False` for all Sitecore DLLs. That may be ovveridden if Sitecore nuget packages reinstalled.
+Solution is tightly coupled to Sitecore 8.2 Initial release through installed nuget packages. That should be fine for generated package and sandbox development because Sitecore DLLs should not be included.
+To achieve that `Copy Local` property is set to `False` for all Sitecore DLLs. That may be overridden if Sitecore nuget packages reinstalled.
 
 Symptoms:  
 
